@@ -521,8 +521,8 @@ $n$ عدد طبیعی داریم. به یک جفت $(a, b)$ از اعداد خو
 
 در گراف زیر یک شار بیشینه از $s$ به $t$ پیدا کنید.
 
-![flow graph](https://files.da-sut.ir/problems/min-cut/min-cut-flow-graph-light.svg#only-light)
-![flow graph](https://files.da-sut.ir/problems/min-cut/min-cut-flow-graph-dark.svg#only-dark)
+![flow graph](../assets/images/flow-network-light.svg#only-light)
+![flow graph](../assets/images/flow-network-dark.svg#only-dark)
 
 سپس یک برش کمینه برای $s$ و $t$ ارائه دهید.
 </div>

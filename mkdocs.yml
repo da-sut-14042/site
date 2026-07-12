@@ -43,15 +43,15 @@ plugins:
   - search
 
 extra_css:
-  - stylesheets/fonts.css
-  - stylesheets/problems.css
+  - assets/styles/fonts.css
+  - assets/styles/problems.css
 
 extra_javascript:
-  - javascripts/mathjax-config.js
-  - javascripts/polyfill.min.js
-  - javascripts/mathjax/es5/tex-mml-chtml.js
-  - javascripts/problem-tags.js
-  - javascripts/toc-math.js
+  - assets/scripts/mathjax-config.js
+  - assets/vendor/polyfill/polyfill.min.js
+  - assets/vendor/mathjax/es5/tex-mml-chtml.js
+  - assets/scripts/problem-tags.js
+  - assets/scripts/toc-math.js
 
 nav:
   - خانه: index.md

@@ -1,0 +1,17 @@
+@font-face {
+  font-family: Vazirmatn;
+  src: url(../fonts/Vazirmatn.woff2) format("woff2");
+  /* This asset is the static Regular face, not a variable font. Declaring a
+     weight range makes browsers reuse the regular outlines for bold text. */
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --md-text-font: Vazirmatn;
+  --md-code-font: monospace;
+  direction: rtl;
+  writing-mode: horizontal-tb;
+  text-orientation: mixed;
+}

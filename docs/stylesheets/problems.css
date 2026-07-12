@@ -1,0 +1,189 @@
+/* ── Problem heading anchor offset ──────────────────────────────── */
+.md-typeset h2.problem,
+.md-typeset h3.problem { scroll-margin-top: 5rem; }
+
+/* ── Type-tag badges (icon-only, square) ────────────────────────── */
+.problem-tags {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .35rem;
+}
+
+/* Block-form: dedicated row (used for the blurred topic chips below
+   the statement). */
+.problem-tags--topics {
+  display: flex;
+  margin: .3rem 0 1rem;
+}
+
+/* Inline-form: rendered next to the problem title — pulls the icons
+   alongside the heading text and aligns them to the heading baseline.
+   `vertical-align: -.18em` keeps the square icons on the same optical
+   line as Persian glyphs that have a low baseline. */
+.md-typeset h2.problem .problem-tags--inline,
+.md-typeset h3.problem .problem-tags--inline {
+  margin-inline-start: .55rem;
+  vertical-align: -.18em;
+  font-weight: normal;
+}
+
+.ptag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: .3em;
+  font-size: .72rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+a.ptag {
+  color: inherit;
+  text-decoration: none;
+}
+
+a.ptag:hover {
+  filter: brightness(1.08);
+  text-decoration: none;
+}
+
+.ptag-handwritten,
+.ptag-video,
+.ptag-exam {
+  width: 1.4em;
+  height: 1.4em;
+  font-size: .8em;  /* shrinks together with the icons inside */
+}
+
+.ptag-handwritten svg,
+.ptag-video svg,
+.ptag-exam svg {
+  width: .82em;
+  height: .82em;
+}
+
+.ptag-handwritten {
+  background: var(--md-accent-fg-color);
+  color: #fff;
+}
+
+.ptag-video {
+  background: #0d9488;          /* teal-600 — distinct from the pencil */
+  color: #fff;
+}
+
+.ptag-exam {
+  background: #e67e00;
+  color: #fff;
+}
+
+/* ── Topic badges: blurred until clicked ───────────────────────── */
+.problem-tags--topics { margin: .3rem 0 1rem; }
+
+.ptag-topic {
+  gap: .35em;
+  padding: .3em .7em;
+  background: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color);
+  filter: blur(8px);
+  cursor: pointer;
+  user-select: none;
+  transition: filter .25s ease;
+}
+
+.ptag-topic svg {
+  width: .8em;
+  height: .8em;
+  flex-shrink: 0;
+}
+
+.ptag-topic.revealed {
+  filter: none;
+  cursor: default;
+}
+
+.ptag-topic:focus-visible {
+  outline: 2px solid var(--md-accent-fg-color);
+  outline-offset: 2px;
+}
+
+/* Hints / solution wrappers and individual hint nodes are emitted as
+   Material admonitions (classes `tip`, `success`, `note`, `abstract`,
+   `question`, `warning`) so Material's own CSS draws the side-bar, the
+   tinted header, and the matching SVG icon — the exact look the previous
+   ``??? tip`` markdown produced. We keep the additional ``hint`` /
+   ``problem-hints`` classes on the elements purely as anchors for tiny
+   tweaks below. */
+
+.md-typeset details.problem-hints,
+.md-typeset details.problem-solution {
+  margin-top: .9rem;
+  margin-bottom: .9rem;
+}
+
+/* When the solution comes right after the hints block (the common case),
+   pull it tight so the pair reads as a single unit instead of two
+   floating cards with a gulf in between. */
+.md-typeset details.problem-hints + details.problem-solution {
+  margin-top: .35rem;
+}
+
+/* The nested node wrappers reuse Material admonition styling, so all we
+   really need to add is a touch of spacing between siblings. */
+.md-typeset details.hint { margin-block: .55rem; }
+
+.problem-solution-video video {
+  width: 100%;
+  max-height: 70vh;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  background: #000;
+}
+
+.problem-solution-video {
+  border: 1px solid var(--md-default-fg-color--lightest, #e3e3e7);
+  border-radius: 9px;
+  padding: .45rem;
+  background: var(--md-default-bg-color);
+}
+
+.problem-solution-summary-video {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.25em;
+  height: 1.25em;
+  margin-inline-start: .35rem;
+  border-radius: .28em;
+  background: #0d9488;
+  color: #fff;
+  vertical-align: -.18em;
+}
+
+.problem-solution-summary-video svg {
+  width: .78em;
+  height: .78em;
+}
+
+.problem-solution-attachments {
+  margin-top: .75rem;
+}
+
+.problem-solution-attachments ul {
+  margin-top: .25rem;
+}
+
+.problem-statement__label {
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+/* ── Misc ──────────────────────────────────────────────────────── */
+hr.problem-break {
+  border: none;
+  border-top: 2px dashed var(--md-default-fg-color--lightest, #e3e3e7);
+  margin: 1.6rem 0;
+}
+

@@ -1,0 +1,67 @@
+site_name: آرشیو طراحی الگوریتم‌ها
+docs_dir: docs
+use_directory_urls: true
+
+theme:
+  name: material
+  custom_dir: overrides
+  language: fa
+  font: false
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle: { icon: material/brightness-7, name: حالت تاریک }
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle: { icon: material/brightness-4, name: حالت روشن }
+  features:
+    - content.code.copy
+    - navigation.tabs
+    - navigation.expand
+    - navigation.top
+    - navigation.indexes
+    - search.highlight
+    - search.suggest
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed: { alternate_style: true }
+  - pymdownx.snippets: { base_path: docs }
+  - pymdownx.arithmatex: { generic: true }
+
+plugins:
+  - search
+
+extra_css:
+  - stylesheets/fonts.css
+  - stylesheets/problems.css
+
+extra_javascript:
+  - javascripts/mathjax-config.js
+  - javascripts/polyfill.min.js
+  - javascripts/mathjax/es5/tex-mml-chtml.js
+  - javascripts/problem-tags.js
+  - javascripts/toc-math.js
+
+nav:
+  - خانه: index.md
+  - تمرین‌ها:
+      - assignments/index.md
+      - تمرین ۱: assignments/tamrin-1.md
+      - تمرین ۲: assignments/tamrin-2.md
+      - تمرین ۳: assignments/tamrin-3.md
+      - تمرین ۴: assignments/tamrin-4.md
+      - تمرین ۵: assignments/tamrin-5.md
+      - تمرین ۶: assignments/tamrin-6.md
+  - جلسات: lectures.md
+  - منابع: materials.md

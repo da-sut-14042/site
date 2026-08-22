@@ -10,7 +10,7 @@ dynamic application controls have been removed.
 ## Production snapshot
 
 - Source: `da:~/website/student-site`
-- Retrieved read-only: 2026-07-11T14:32:50Z
+- Retrieved read-only: 2026-08-22T23:00:22Z
 - Media: still served from `https://files.da-sut.ir/`
 
 The Markdown is a one-time archive snapshot. This repository does not depend

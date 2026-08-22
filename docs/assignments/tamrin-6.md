@@ -147,6 +147,15 @@
 </div>
 
 
+<details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - پوریازارعی</summary>
+
+
+<div class="problem-solution-video"><video controls preload="none" src="https://files.da-sut.ir/assignments/tamrin-6/hw6-C421/solution/2026-07-14T082207Z0000/XRecorder_20260713_02.mp4"></video></div>
+
+
+</details>
+
+
 ## سوال ۵ — پوشش مستطیلی { #problem-hw6-8FC6 .problem .problem-optional }
 
 
@@ -161,6 +170,15 @@
 </div>
 
 
+<details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - کسری منتظری</summary>
+
+
+<div class="problem-solution-video"><video controls preload="none" src="https://files.da-sut.ir/assignments/tamrin-6/hw6-8FC6/solution/2026-07-26T191750Z0000/DA-HW6-Q5-402106575.mp4"></video></div>
+
+
+</details>
+
+
 ## سوال ۶ — پوشش مجموعه‌ای { #problem-hw6-CE68 .problem .problem-optional }
 
 
@@ -171,6 +189,15 @@
 
 مجموعه‌های $\{S_1, S_2, \dots, S_n\}$ داده شده‌اند. می‌خواهیم زیرمجموعه‌ای با کمترین تعداد عضو از اجتماع $S_i$ها را بیابیم که با هر یک از $S_i$ها اشتراک ناتهی داشته باشد. ثابت کنید این مسئله NP-complete است.
 </div>
+
+
+<details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - محمدامین حیدری</summary>
+
+
+<div class="problem-solution-video"><video controls preload="none" src="https://files.da-sut.ir/assignments/tamrin-6/hw6-CE68/solution/2026-07-17T195453Z0000/output.mp4"></video></div>
+
+
+</details>
 
 
 ## سوال ۷ — پوشش یالی { #problem-hw6-FE98 .problem .problem-optional }
@@ -224,6 +251,17 @@
 </div>
 
 
+<details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - غزاله کریمی</summary>
+
+
+<div class="problem-solution-video"><video controls preload="none" src="https://files.da-sut.ir/assignments/tamrin-6/hw6-ECC5/solution/2026-07-17T204835Z0000/1000022393.mp4"></video>
+<div class="problem-solution-attachments"><strong>فایل‌های همراه</strong><ul><li><a href="https://files.da-sut.ir/assignments/tamrin-6/hw6-ECC5/solution/2026-07-17T204835Z0000/The_P-NP_Fallacy.pdf">The_P-NP_Fallacy.pdf</a></li></ul></div>
+</div>
+
+
+</details>
+
+
 ## سوال ۱۰ — ضرر شرکت پست { #problem-hw6-12F8 .problem .problem-optional }
 
 
@@ -236,6 +274,15 @@
 </div>
 
 
+<details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - امیرحسین اسفندیاری</summary>
+
+
+<div class="problem-solution-video"><video controls preload="none" src="https://files.da-sut.ir/assignments/tamrin-6/hw6-12F8/solution/2026-07-17T163710Z0000/2026-07-11-20-34-15.mkv"></video></div>
+
+
+</details>
+
+
 ## سوال ۱۱ — گراف رنگی رنگی { #problem-hw6-2BF1 .problem .problem-optional }
 
 
@@ -246,6 +293,15 @@
 
 می‌خواهیم راس‌های یک گراف را با رنگ‌های قرمز، آبی و زرد به گونه‌ای رنگ کنیم که رئوس مجاور آن ناهمرنگ باشند. ثابت کنید اگر مسئله‌ی 3-CNF را بتوانیم در زمان چندجمله‌ای حل کنیم، این مسئله را نیز می‌توان در زمان چندجمله‌ای حل کرد.
 </div>
+
+
+<details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - حسنا شاه حیدری</summary>
+
+
+<div class="problem-solution-video"><video controls preload="none" src="https://files.da-sut.ir/assignments/tamrin-6/hw6-2BF1/solution/2026-07-17T192522Z0000/RPReplay_Final1784818542.mov"></video></div>
+
+
+</details>
 
 
 ## سوال ۱۲ — حداکثر تا حداقل { #problem-hw6-9FE2 .problem .problem-optional }
@@ -400,6 +456,17 @@ d_v \le d_u + w(u,v).
 </div>
 
 
+<details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - نرگس کاری</summary>
+
+
+<div class="problem-solution-video"><video controls preload="none" src="https://files.da-sut.ir/assignments/tamrin-6/hw6-E4E4/solution/2026-07-17T100952Z0000/Video-Project.mp4"></video>
+<div class="problem-solution-attachments"><strong>فایل‌های همراه</strong><ul><li><a href="https://files.da-sut.ir/assignments/tamrin-6/hw6-E4E4/solution/2026-07-17T100952Z0000/shortest-path-lp.pdf">shortest-path-lp.pdf</a></li></ul></div>
+</div>
+
+
+</details>
+
+
 ## سوال ۲۰ — شار بیشینه { #problem-hw6-C4DD .problem .problem-optional }
 
 
@@ -420,6 +487,15 @@ s \to a: 3, \qquad s \to b: 2, \qquad a \to b: 1, \qquad a \to t: 2, \qquad b \t
 - **(ب)** یک شار شدنی با مقدار $5$ ارائه دهید.
 - **(ج)** با استفاده از یک cut ساده نشان دهید مقدار شار بیشینه بیشتر از $5$ نمی‌شود.
 </div>
+
+
+<details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - سید محمد مهدی حسینی</summary>
+
+
+<div class="problem-solution-video"><video controls preload="none" src="https://files.da-sut.ir/assignments/tamrin-6/hw6-C4DD/solution/2026-07-17T193938Z0000/20.mp4"></video></div>
+
+
+</details>
 
 
 ## سوال ۲۱ — دوگان شار بیشینه { #problem-hw6-E3C4 .problem .problem-optional }
@@ -471,6 +547,17 @@ C = \begin{bmatrix}
 
 یک برنامه‌ی خطی برای کمینه کردن هزینه‌ی تخصیص بنویسید و جواب بهینه را پیدا کنید.
 </div>
+
+
+<details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - سجاد عاقلی</summary>
+
+
+<div class="problem-solution-video"><video controls preload="none" src="https://files.da-sut.ir/assignments/tamrin-6/hw6-9A44/solution/2026-07-13T194923Z0000/Da-Video-402110662.mp4"></video>
+<div class="problem-solution-attachments"><strong>فایل‌های همراه</strong><ul><li><a href="https://files.da-sut.ir/assignments/tamrin-6/hw6-9A44/solution/2026-07-13T194923Z0000/Screenshot-662-.png">Screenshot-662-.png</a></li></ul></div>
+</div>
+
+
+</details>
 
 
 ## سوال ۲۳ — نقطه چبیشف { #problem-hw6-1980 .problem .problem-optional }
@@ -558,6 +645,15 @@ x, y &\ge 0.
 </div>
 
 
+<details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - مهدی نعمتی</summary>
+
+
+<div class="problem-solution-video"><video controls preload="none" src="https://files.da-sut.ir/assignments/tamrin-6/hw6-5948/solution/2026-07-17T194847Z0000/output.mp4"></video></div>
+
+
+</details>
+
+
 ## سوال ۲۶ — بی‌کرانی { #problem-hw6-013C .problem .problem-optional }
 
 
@@ -622,6 +718,17 @@ x_1, x_2 &\ge 0.
 </div>
 
 
+<details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - علی مقدسی</summary>
+
+
+<div class="problem-solution-video"><video controls preload="none" src="https://files.da-sut.ir/assignments/tamrin-6/hw6-2FB2/solution/2026-07-17T222904Z0000/Untitled-l.mp4"></video>
+<div class="problem-solution-attachments"><strong>فایل‌های همراه</strong><ul><li><a href="https://files.da-sut.ir/assignments/tamrin-6/hw6-2FB2/solution/2026-07-17T222904Z0000/HW1.pdf">HW1.pdf</a></li></ul></div>
+</div>
+
+
+</details>
+
+
 ## سوال ۲۹ — فلش‌بک { #problem-duality-3 .problem .problem-optional }
 
 
@@ -681,6 +788,15 @@ $$
 <details class="tip problem-hints" markdown="1"><summary>راهنمایی‌ها</summary>
 
 `سوال ۱) قاب‌های تو در تو` از تمرین ۱ و `سوال ۲۲) مستطیل‌ها` از تمرین ۲ را بررسی کنید.
+
+</details>
+
+
+<details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - روژین تقی‌زادگان</summary>
+
+
+<div class="problem-solution-video"><video controls preload="none" src="https://files.da-sut.ir/assignments/tamrin-6/duality-2/solution/2026-07-16T180453Z0000/DA-Q31-faster.mp4"></video></div>
+
 
 </details>
 
@@ -795,6 +911,15 @@ E = \{(a, 1), (a, 2), (b, 2), (b, 3)\}.
 </div>
 
 
+<details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - نیکی رشیدیان</summary>
+
+
+<div class="problem-solution-video"><video controls preload="none" src="https://files.da-sut.ir/assignments/tamrin-6/hw6-1802/solution/2026-07-25T110918Z0000/35-35.mkv"></video></div>
+
+
+</details>
+
+
 ## سوال ۳۶ — ساده‌سازی { #problem-hw6-30D4 .problem .problem-optional }
 
 
@@ -877,6 +1002,15 @@ Ax &\preceq b \\
 </div>
 
 
+<details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - سروش داوران</summary>
+
+
+<div class="problem-solution-video"><video controls preload="none" src="https://files.da-sut.ir/assignments/tamrin-6/hw6-8200/solution/2026-07-18T203027Z0000/Q38.mp4"></video></div>
+
+
+</details>
+
+
 ## سوال ۳۹ — جهانگرد تقریبی { #problem-hw6-D6C9 .problem .problem-optional }
 
 
@@ -915,12 +1049,12 @@ Ax &\preceq b \\
 </div>
 
 
-## سوال ۴۱ — پوشش راسی ابتکاری { #problem-hw6-219E .problem .problem-optional }
+## سوال ۴۱ — پوشش راسی ابتکاری { #problem-hw6-219e .problem .problem-optional }
 
 
 
 
-<div class="admonition example problem-statement" data-problem-slug="hw6-219E" markdown="1">
+<div class="admonition example problem-statement" data-problem-slug="hw6-219e" markdown="1">
 <div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
 
 روش ابتکاری زیر را برای مسئله‌ی vertex cover در نظر بگیرید: یک درخت جستجوی اول عمق (DFS tree) از گراف بسازید و تمام برگ‌ها را از این درخت حذف کنید.
@@ -928,6 +1062,15 @@ Ax &\preceq b \\
 - **(الف)** نشان دهید رئوس باقی‌مانده حتماً یک پوشش رأسی (vertex cover) برای گراف تشکیل می‌دهند.
 - **(ب)** ثابت کنید اندازه‌ی این پوشش پیدا شده، حداکثر دو برابر اندازه‌ی پوشش بهینه (optimal) است (یعنی این الگوریتم یک 2-approximation است).
 </div>
+
+
+<details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - ایلیا فرصتی</summary>
+
+
+<div class="problem-solution-video"><video controls preload="none" src="https://files.da-sut.ir/assignments/tamrin-6/hw6-219E/solution/2026-07-18T091852Z0000/1001064326.mp4"></video></div>
+
+
+</details>
 
 
 ## سوال ۴۲ — تطابق سرعتی { #problem-hw6-50D9 .problem .problem-optional }
@@ -944,6 +1087,15 @@ Ax &\preceq b \\
 
 *(دقت کنید که مسئله‌ی تطابق ماکزیمم NP-hard نیست و برای آن الگوریتم چندجمله‌ای دقیق وجود دارد، اما در اینجا هدف تحلیل یک روش تقریبی سریع است.)*
 </div>
+
+
+<details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - زهرا قصابی</summary>
+
+
+<div class="problem-solution-video"><video controls preload="none" src="https://files.da-sut.ir/assignments/tamrin-6/hw6-50D9/solution/2026-07-17T210239Z0000/q6.mkv"></video></div>
+
+
+</details>
 
 
 ## سوال ۴۳ — بی دوری { #problem-hw6-EA5B .problem .problem-optional }

@@ -150,7 +150,7 @@
 <details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - پوریازارعی</summary>
 
 
-<div class="problem-solution-video"><video controls preload="none" src="https://files.da-sut.ir/assignments/tamrin-6/hw6-C421/solution/2026-07-14T082207Z0000/XRecorder_20260713_02.mp4"></video></div>
+<div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-06-q04-solution-video.mp4"></video></div>
 
 
 </details>
@@ -173,7 +173,7 @@
 <details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - کسری منتظری</summary>
 
 
-<div class="problem-solution-video"><video controls preload="none" src="https://files.da-sut.ir/assignments/tamrin-6/hw6-8FC6/solution/2026-07-26T191750Z0000/DA-HW6-Q5-402106575.mp4"></video></div>
+<div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-06-q05-solution-video.mp4"></video></div>
 
 
 </details>
@@ -194,7 +194,7 @@
 <details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - محمدامین حیدری</summary>
 
 
-<div class="problem-solution-video"><video controls preload="none" src="https://files.da-sut.ir/assignments/tamrin-6/hw6-CE68/solution/2026-07-17T195453Z0000/output.mp4"></video></div>
+<div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-06-q06-solution-video.mp4"></video></div>
 
 
 </details>
@@ -254,8 +254,8 @@
 <details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - غزاله کریمی</summary>
 
 
-<div class="problem-solution-video"><video controls preload="none" src="https://files.da-sut.ir/assignments/tamrin-6/hw6-ECC5/solution/2026-07-17T204835Z0000/1000022393.mp4"></video>
-<div class="problem-solution-attachments"><strong>فایل‌های همراه</strong><ul><li><a href="https://files.da-sut.ir/assignments/tamrin-6/hw6-ECC5/solution/2026-07-17T204835Z0000/The_P-NP_Fallacy.pdf">The_P-NP_Fallacy.pdf</a></li></ul></div>
+<div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-06-q09-solution-video.mp4"></video>
+<div class="problem-solution-attachments"><strong>فایل‌های همراه</strong><ul><li><a href="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-06-q09-solution-notes.pdf">The_P-NP_Fallacy.pdf</a></li></ul></div>
 </div>
 
 
@@ -277,7 +277,7 @@
 <details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - امیرحسین اسفندیاری</summary>
 
 
-<div class="problem-solution-video"><video controls preload="none" src="https://files.da-sut.ir/assignments/tamrin-6/hw6-12F8/solution/2026-07-17T163710Z0000/2026-07-11-20-34-15.mkv"></video></div>
+<div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-06-q10-solution-video.mkv"></video></div>
 
 
 </details>
@@ -298,7 +298,7 @@
 <details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - حسنا شاه حیدری</summary>
 
 
-<div class="problem-solution-video"><video controls preload="none" src="https://files.da-sut.ir/assignments/tamrin-6/hw6-2BF1/solution/2026-07-17T192522Z0000/RPReplay_Final1784818542.mov"></video></div>
+<div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-06-q11-solution-video.mov"></video></div>
 
 
 </details>
@@ -459,8 +459,8 @@ d_v \le d_u + w(u,v).
 <details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - نرگس کاری</summary>
 
 
-<div class="problem-solution-video"><video controls preload="none" src="https://files.da-sut.ir/assignments/tamrin-6/hw6-E4E4/solution/2026-07-17T100952Z0000/Video-Project.mp4"></video>
-<div class="problem-solution-attachments"><strong>فایل‌های همراه</strong><ul><li><a href="https://files.da-sut.ir/assignments/tamrin-6/hw6-E4E4/solution/2026-07-17T100952Z0000/shortest-path-lp.pdf">shortest-path-lp.pdf</a></li></ul></div>
+<div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-06-q19-solution-video.mp4"></video>
+<div class="problem-solution-attachments"><strong>فایل‌های همراه</strong><ul><li><a href="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-06-q19-solution-notes.pdf">shortest-path-lp.pdf</a></li></ul></div>
 </div>
 
 
@@ -492,7 +492,7 @@ s \to a: 3, \qquad s \to b: 2, \qquad a \to b: 1, \qquad a \to t: 2, \qquad b \t
 <details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - سید محمد مهدی حسینی</summary>
 
 
-<div class="problem-solution-video"><video controls preload="none" src="https://files.da-sut.ir/assignments/tamrin-6/hw6-C4DD/solution/2026-07-17T193938Z0000/20.mp4"></video></div>
+<div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-06-q20-solution-video.mp4"></video></div>
 
 
 </details>
@@ -552,8 +552,8 @@ C = \begin{bmatrix}
 <details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - سجاد عاقلی</summary>
 
 
-<div class="problem-solution-video"><video controls preload="none" src="https://files.da-sut.ir/assignments/tamrin-6/hw6-9A44/solution/2026-07-13T194923Z0000/Da-Video-402110662.mp4"></video>
-<div class="problem-solution-attachments"><strong>فایل‌های همراه</strong><ul><li><a href="https://files.da-sut.ir/assignments/tamrin-6/hw6-9A44/solution/2026-07-13T194923Z0000/Screenshot-662-.png">Screenshot-662-.png</a></li></ul></div>
+<div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-06-q22-solution-video.mp4"></video>
+<div class="problem-solution-attachments"><strong>فایل‌های همراه</strong><ul><li><a href="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-06-q22-solution-image.png">Screenshot-662-.png</a></li></ul></div>
 </div>
 
 
@@ -613,7 +613,7 @@ x_1 \ge 0, \qquad x_2 &\text{ is unrestricted}, \qquad x_3 \le 0.
 <details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - علی نعمت دوست</summary>
 
 
-<div class="problem-solution-video"><video controls preload="none" src="https://files.da-sut.ir/assignments/tamrin-6/hw6-e199/solution/2026-07-09T084645Z0000/RPReplay_Final1783505114.mp4"></video></div>
+<div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-06-q24-solution-video.mp4"></video></div>
 
 
 </details>
@@ -648,7 +648,7 @@ x, y &\ge 0.
 <details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - مهدی نعمتی</summary>
 
 
-<div class="problem-solution-video"><video controls preload="none" src="https://files.da-sut.ir/assignments/tamrin-6/hw6-5948/solution/2026-07-17T194847Z0000/output.mp4"></video></div>
+<div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-06-q25-solution-video.mp4"></video></div>
 
 
 </details>
@@ -721,8 +721,8 @@ x_1, x_2 &\ge 0.
 <details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - علی مقدسی</summary>
 
 
-<div class="problem-solution-video"><video controls preload="none" src="https://files.da-sut.ir/assignments/tamrin-6/hw6-2FB2/solution/2026-07-17T222904Z0000/Untitled-l.mp4"></video>
-<div class="problem-solution-attachments"><strong>فایل‌های همراه</strong><ul><li><a href="https://files.da-sut.ir/assignments/tamrin-6/hw6-2FB2/solution/2026-07-17T222904Z0000/HW1.pdf">HW1.pdf</a></li></ul></div>
+<div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-06-q28-solution-video.mp4"></video>
+<div class="problem-solution-attachments"><strong>فایل‌های همراه</strong><ul><li><a href="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-06-q28-solution-notes.pdf">HW1.pdf</a></li></ul></div>
 </div>
 
 
@@ -795,7 +795,7 @@ $$
 <details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - روژین تقی‌زادگان</summary>
 
 
-<div class="problem-solution-video"><video controls preload="none" src="https://files.da-sut.ir/assignments/tamrin-6/duality-2/solution/2026-07-16T180453Z0000/DA-Q31-faster.mp4"></video></div>
+<div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-06-q31-solution-video.mp4"></video></div>
 
 
 </details>
@@ -826,8 +826,8 @@ E = \{(a, 1), (a, 2), (b, 2), (b, 3)\}.
 <details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - فاطیما تیمارچی</summary>
 
 
-<div class="problem-solution-video"><video controls preload="none" src="https://files.da-sut.ir/assignments/tamrin-6/hw6-0D81/solution/2026-07-10T095213Z0000/Q32_video.mp4"></video>
-<div class="problem-solution-attachments"><strong>فایل‌های همراه</strong><ul><li><a href="https://files.da-sut.ir/assignments/tamrin-6/hw6-0D81/solution/2026-07-10T095213Z0000/Q32.pdf">Q32.pdf</a></li></ul></div>
+<div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-06-q32-solution-video.mp4"></video>
+<div class="problem-solution-attachments"><strong>فایل‌های همراه</strong><ul><li><a href="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-06-q32-solution-notes.pdf">Q32.pdf</a></li></ul></div>
 </div>
 
 
@@ -914,7 +914,7 @@ E = \{(a, 1), (a, 2), (b, 2), (b, 3)\}.
 <details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - نیکی رشیدیان</summary>
 
 
-<div class="problem-solution-video"><video controls preload="none" src="https://files.da-sut.ir/assignments/tamrin-6/hw6-1802/solution/2026-07-25T110918Z0000/35-35.mkv"></video></div>
+<div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-06-q35-solution-video.mkv"></video></div>
 
 
 </details>
@@ -1005,7 +1005,7 @@ Ax &\preceq b \\
 <details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - سروش داوران</summary>
 
 
-<div class="problem-solution-video"><video controls preload="none" src="https://files.da-sut.ir/assignments/tamrin-6/hw6-8200/solution/2026-07-18T203027Z0000/Q38.mp4"></video></div>
+<div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-06-q38-solution-video.mp4"></video></div>
 
 
 </details>
@@ -1028,7 +1028,7 @@ Ax &\preceq b \\
 <details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - ایلیا یزدانی</summary>
 
 
-<div class="problem-solution-video"><video controls preload="none" src="https://files.da-sut.ir/assignments/tamrin-6/hw6-D6C9/solution/2026-07-09T122641Z0000/Da-P39-3.mp4"></video></div>
+<div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-06-q39-solution-video.mp4"></video></div>
 
 
 </details>
@@ -1067,7 +1067,7 @@ Ax &\preceq b \\
 <details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - ایلیا فرصتی</summary>
 
 
-<div class="problem-solution-video"><video controls preload="none" src="https://files.da-sut.ir/assignments/tamrin-6/hw6-219E/solution/2026-07-18T091852Z0000/1001064326.mp4"></video></div>
+<div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-06-q41-solution-video.mp4"></video></div>
 
 
 </details>
@@ -1092,7 +1092,7 @@ Ax &\preceq b \\
 <details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - زهرا قصابی</summary>
 
 
-<div class="problem-solution-video"><video controls preload="none" src="https://files.da-sut.ir/assignments/tamrin-6/hw6-50D9/solution/2026-07-17T210239Z0000/q6.mkv"></video></div>
+<div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-06-q42-solution-video.mkv"></video></div>
 
 
 </details>

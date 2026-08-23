@@ -197,8 +197,8 @@ $n$ سنگ به‌ترتیب از چپ به راست از $1$ تا $n$ شمار�
 <details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - محمد محمودیه</summary>
 
 
-<div class="problem-solution-video"><video controls preload="none" src="https://files.da-sut.ir/assignments/tamrin-2/hw2-p08/solution/2026-05-22T144336Z0000/HW2_Q8_compressed.mp4"></video>
-<div class="problem-solution-attachments"><strong>فایل‌های همراه</strong><ul><li><a href="https://files.da-sut.ir/assignments/tamrin-2/hw2-p08/solution/2026-05-22T144336Z0000/DA_HW2_Q8.pdf">DA_HW2_Q8.pdf</a></li></ul></div>
+<div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-02-q08-solution-video.mp4"></video>
+<div class="problem-solution-attachments"><strong>فایل‌های همراه</strong><ul><li><a href="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-02-q08-solution-notes.pdf">DA_HW2_Q8.pdf</a></li></ul></div>
 </div>
 
 
@@ -233,7 +233,7 @@ $n$ سنگ به‌ترتیب از چپ به راست از $1$ تا $n$ شمار�
 <details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - مهدیار مستشارهریس</summary>
 
 
-<div class="problem-solution-video"><video controls preload="none" src="https://files.da-sut.ir/assignments/tamrin-2/hw2-p10/solution/2026-05-21T144229Z0000/HalletDA.mp4"></video></div>
+<div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-02-q10-solution-video.mp4"></video></div>
 
 
 </details>
@@ -285,8 +285,8 @@ $n$ سنگ به‌ترتیب از چپ به راست از $1$ تا $n$ شمار�
 <details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - اشکان تاریوردی</summary>
 
 
-<div class="problem-solution-video"><video controls preload="none" src="https://files.da-sut.ir/assignments/tamrin-2/hw2-p13/solution/2026-05-22T144453Z0000/output.mp4"></video>
-<div class="problem-solution-attachments"><strong>فایل‌های همراه</strong><ul><li><a href="https://files.da-sut.ir/assignments/tamrin-2/hw2-p13/solution/2026-05-22T144453Z0000/DA_DPHW_final_slides.pdf">DA_DPHW_final_slides.pdf</a></li></ul></div>
+<div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-02-q13-solution-video.mp4"></video>
+<div class="problem-solution-attachments"><strong>فایل‌های همراه</strong><ul><li><a href="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-02-q13-solution-notes.pdf">DA_DPHW_final_slides.pdf</a></li></ul></div>
 </div>
 
 
@@ -320,7 +320,7 @@ $n$ سنگ به‌ترتیب از چپ به راست از $1$ تا $n$ شمار�
 <details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - شایان سبزی</summary>
 
 
-<div class="problem-solution-video"><video controls preload="none" src="https://files.da-sut.ir/assignments/tamrin-2/hw2-p15/solution/2026-05-23T083918Z0000/Rec-0016.mp4"></video></div>
+<div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-02-q15-solution-video.mp4"></video></div>
 
 
 </details>
@@ -375,7 +375,7 @@ $n$ سنگ به‌ترتیب از چپ به راست از $1$ تا $n$ شمار�
 <details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - ایلیا فرصتی</summary>
 
 
-<div class="problem-solution-video"><video controls preload="none" src="https://files.da-sut.ir/assignments/tamrin-2/hw2-p18/solution/2026-05-23T090323Z0000/18.mp4"></video></div>
+<div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-02-q18-solution-video.mp4"></video></div>
 
 
 </details>
@@ -404,8 +404,8 @@ $n$ سنگ به‌ترتیب از چپ به راست از $1$ تا $n$ شمار�
 <details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - محمدپارسا شاه‌محمدی</summary>
 
 
-<div class="problem-solution-video"><video controls preload="none" src="https://files.da-sut.ir/assignments/tamrin-2/hw2-p19/solution/2026-05-20T165907Z0000/19.mp4"></video>
-<div class="problem-solution-attachments"><strong>فایل‌های همراه</strong><ul><li><a href="https://files.da-sut.ir/assignments/tamrin-2/hw2-p19/solution/2026-05-20T165907Z0000/DA-19.pdf">DA-19.pdf</a></li></ul></div>
+<div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-02-q19-solution-video.mp4"></video>
+<div class="problem-solution-attachments"><strong>فایل‌های همراه</strong><ul><li><a href="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-02-q19-solution-notes.pdf">DA-19.pdf</a></li></ul></div>
 </div>
 
 
@@ -429,7 +429,7 @@ $n$ سنگ به‌ترتیب از چپ به راست از $1$ تا $n$ شمار�
 <details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - سپهر علیپور</summary>
 
 
-<div class="problem-solution-video"><video controls preload="none" src="https://files.da-sut.ir/assignments/tamrin-2/hw2-p20/solution/2026-05-21T154014Z0000/HW2P20.mp4"></video></div>
+<div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-02-q20-solution-video.mp4"></video></div>
 
 
 </details>
@@ -479,7 +479,7 @@ $n$ سنگ به‌ترتیب از چپ به راست از $1$ تا $n$ شمار�
 <details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - پارسا ضمیری</summary>
 
 
-<div class="problem-solution-video"><video controls preload="none" src="https://files.da-sut.ir/assignments/tamrin-2/hw2-p23/solution/2026-05-23T090226Z0000/da2.mp4"></video></div>
+<div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-02-q23-solution-video.mp4"></video></div>
 
 
 </details>
@@ -506,8 +506,8 @@ $n$ سنگ به‌ترتیب از چپ به راست از $1$ تا $n$ شمار�
 <details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - متین غیاثی</summary>
 
 
-<div class="problem-solution-video"><video controls preload="none" src="https://files.da-sut.ir/assignments/tamrin-2/hw2-p24/solution/2026-05-22T151252Z0000/output.mp4"></video>
-<div class="problem-solution-attachments"><strong>فایل‌های همراه</strong><ul><li><a href="https://files.da-sut.ir/assignments/tamrin-2/hw2-p24/solution/2026-05-22T151252Z0000/LIS_Solution_Slides-v2-1-.pdf">LIS_Solution_Slides-v2-1-.pdf</a></li></ul></div>
+<div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-02-q24-solution-video.mp4"></video>
+<div class="problem-solution-attachments"><strong>فایل‌های همراه</strong><ul><li><a href="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-02-q24-solution-notes.pdf">LIS_Solution_Slides-v2-1-.pdf</a></li></ul></div>
 </div>
 
 
@@ -530,8 +530,8 @@ $n$ سنگ به‌ترتیب از چپ به راست از $1$ تا $n$ شمار�
 <details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - سهیل سیاح ورگ</summary>
 
 
-<div class="problem-solution-video"><video controls preload="none" src="https://files.da-sut.ir/assignments/tamrin-2/hw2-p25/solution/2026-05-22T162409Z0000/25.mp4"></video>
-<div class="problem-solution-attachments"><strong>فایل‌های همراه</strong><ul><li><a href="https://files.da-sut.ir/assignments/tamrin-2/hw2-p25/solution/2026-05-22T162409Z0000/HW2-25.pdf">HW2-25.pdf</a></li></ul></div>
+<div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-02-q25-solution-video.mp4"></video>
+<div class="problem-solution-attachments"><strong>فایل‌های همراه</strong><ul><li><a href="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-02-q25-solution-notes.pdf">HW2-25.pdf</a></li></ul></div>
 </div>
 
 
@@ -556,7 +556,7 @@ $n$ سنگ به‌ترتیب از چپ به راست از $1$ تا $n$ شمار�
 <details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - آروین بقال اصل</summary>
 
 
-<div class="problem-solution-video"><video controls preload="none" src="https://files.da-sut.ir/assignments/tamrin-2/hw2-p26/solution/2026-05-21T155509Z0000/DA-HW2-Q26-Arvin-Asli.mp4"></video></div>
+<div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-02-q26-solution-video.mp4"></video></div>
 
 
 </details>
@@ -577,7 +577,7 @@ $n$ سنگ به‌ترتیب از چپ به راست از $1$ تا $n$ شمار�
 <details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - رسا محمدی</summary>
 
 
-<div class="problem-solution-video"><video controls preload="none" src="https://files.da-sut.ir/assignments/tamrin-2/hw2-p27/solution/2026-05-15T124314Z0000/27-hazfpalindrome.mkv"></video></div>
+<div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-02-q27-solution-video.mkv"></video></div>
 
 
 </details>
@@ -602,7 +602,7 @@ $n$ سنگ به‌ترتیب از چپ به راست از $1$ تا $n$ شمار�
 <details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - محمدعلی‌ مس‌چی</summary>
 
 
-<div class="problem-solution-video"><video controls preload="none" src="https://files.da-sut.ir/assignments/tamrin-2/hw2-p28/solution/2026-05-22T121651Z0000/rotated_28.mp4"></video></div>
+<div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-02-q28-solution-video.mp4"></video></div>
 
 
 </details>
@@ -627,7 +627,7 @@ $n$ سنگ به‌ترتیب از چپ به راست از $1$ تا $n$ شمار�
 <details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - مهدی شیرین‌بیان</summary>
 
 
-<div class="problem-solution-video"><video controls preload="none" src="https://files.da-sut.ir/assignments/tamrin-2/hw2-p29/solution/2026-07-07T200705Z0000/1000026706.mp4"></video></div>
+<div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-02-q29-solution-video.mp4"></video></div>
 
 
 </details>
@@ -658,7 +658,7 @@ $n$ سنگ به‌ترتیب از چپ به راست از $1$ تا $n$ شمار�
 <details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - آرش قوامی</summary>
 
 
-<div class="problem-solution-video"><video controls preload="none" src="https://files.da-sut.ir/assignments/tamrin-2/hw2-p30/solution/2026-05-24T132434Z0000/output.mp4"></video></div>
+<div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-02-q30-solution-video.mp4"></video></div>
 
 
 </details>
@@ -679,7 +679,7 @@ $n$ سنگ به‌ترتیب از چپ به راست از $1$ تا $n$ شمار�
 <details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - محمدرضا ایزدی</summary>
 
 
-<div class="problem-solution-video"><video controls preload="none" src="https://files.da-sut.ir/assignments/tamrin-2/hw2-p31/solution/2026-05-24T132855Z0000/da31f.mp4"></video></div>
+<div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-02-q31-solution-video.mp4"></video></div>
 
 
 </details>
@@ -700,7 +700,7 @@ $n$ سنگ به‌ترتیب از چپ به راست از $1$ تا $n$ شمار�
 <details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - زهرا قصابی</summary>
 
 
-<div class="problem-solution-video"><video controls preload="none" src="https://files.da-sut.ir/assignments/tamrin-2/hw2-p32/solution/2026-05-24T132900Z0000/RPReplay_Final1779217957.mp4"></video></div>
+<div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-02-q32-solution-video.mp4"></video></div>
 
 
 </details>
@@ -735,8 +735,8 @@ $n$ سنگ به‌ترتیب از چپ به راست از $1$ تا $n$ شمار�
 <details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - نیما نظری</summary>
 
 
-<div class="problem-solution-video"><video controls preload="none" src="https://files.da-sut.ir/assignments/tamrin-2/hw2-p34/solution/2026-05-22T144923Z0000/avc_Rec-0031.mp4"></video>
-<div class="problem-solution-attachments"><strong>فایل‌های همراه</strong><ul><li><a href="https://files.da-sut.ir/assignments/tamrin-2/hw2-p34/solution/2026-05-22T144923Z0000/findingHamltonCycle.pdf">findingHamltonCycle.pdf</a></li></ul></div>
+<div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-02-q34-solution-video.mp4"></video>
+<div class="problem-solution-attachments"><strong>فایل‌های همراه</strong><ul><li><a href="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-02-q34-solution-notes.pdf">findingHamltonCycle.pdf</a></li></ul></div>
 </div>
 
 
@@ -772,7 +772,7 @@ $n$ سنگ به‌ترتیب از چپ به راست از $1$ تا $n$ شمار�
 <details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - روژین تقی‌زادگان</summary>
 
 
-<div class="problem-solution-video"><video controls preload="none" src="https://files.da-sut.ir/assignments/tamrin-2/hw2-p36/solution/2026-05-20T184712Z0000/HW2-Q36.mp4"></video></div>
+<div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-02-q36-solution-video.mp4"></video></div>
 
 
 </details>
@@ -795,7 +795,7 @@ $n$ سنگ به‌ترتیب از چپ به راست از $1$ تا $n$ شمار�
 <details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - محمد بنی‌احمدی</summary>
 
 
-<div class="problem-solution-video"><video controls preload="none" src="https://files.da-sut.ir/assignments/tamrin-2/hw2-p37/solution/2026-05-17T085401Z0000/1000059133.mp4"></video></div>
+<div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-02-q37-solution-video.mp4"></video></div>
 
 
 </details>
@@ -883,7 +883,7 @@ $n$ سنگ به‌ترتیب از چپ به راست از $1$ تا $n$ شمار�
 <details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - مهراد حصاری</summary>
 
 
-<div class="problem-solution-video"><video controls preload="none" src="https://files.da-sut.ir/assignments/tamrin-2/hw2-p42/solution/2026-05-21T155648Z0000/Presentation1.mp4"></video></div>
+<div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-02-q42-solution-video.mp4"></video></div>
 
 
 </details>

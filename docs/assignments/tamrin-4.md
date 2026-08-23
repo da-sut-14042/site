@@ -238,7 +238,7 @@
 <details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - محمد مهدی سیاوشی</summary>
 
 
-<div class="problem-solution-video"><video controls preload="none" src="https://files.da-sut.ir/assignments/tamrin-4/cycle-covering/solution/2026-06-17T130014Z0000/VID_20260617_161944_531.mp4"></video></div>
+<div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-04-q08-solution-video.mp4"></video></div>
 
 
 </details>
@@ -264,7 +264,7 @@
 <details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - بهار برقبانی</summary>
 
 
-<div class="problem-solution-video"><video controls preload="none" src="https://files.da-sut.ir/assignments/tamrin-4/bounded-mst/solution/2026-06-16T070700Z0000/da-record.mp4"></video></div>
+<div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-04-q09-solution-video.mp4"></video></div>
 
 
 </details>
@@ -313,7 +313,7 @@
 <details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - امیرحسین اسفندیاری</summary>
 
 
-<div class="problem-solution-video"><video controls preload="none" src="https://files.da-sut.ir/assignments/tamrin-4/sum-of-distances/solution/2026-06-14T124705Z0000/2026-06-14-15-37-41.mkv"></video></div>
+<div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-04-q11-solution-video.mkv"></video></div>
 
 
 </details>
@@ -363,8 +363,8 @@ $n$ عدد طبیعی داریم. به یک جفت $(a, b)$ از اعداد خو
 <details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - محمدمهدی فراهانی</summary>
 
 
-<div class="problem-solution-video"><video controls preload="none" src="https://files.da-sut.ir/assignments/tamrin-4/good-pair/solution/2026-06-14T153622Z0000/1000001322.mp4"></video>
-<div class="problem-solution-attachments"><strong>فایل‌های همراه</strong><ul><li><a href="https://files.da-sut.ir/assignments/tamrin-4/good-pair/solution/2026-06-14T153622Z0000/DA_PR01_400170341.pdf">DA_PR01_400170341.pdf</a></li></ul></div>
+<div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-04-q13-solution-video.mp4"></video>
+<div class="problem-solution-attachments"><strong>فایل‌های همراه</strong><ul><li><a href="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-04-q13-solution-notes.pdf">DA_PR01_400170341.pdf</a></li></ul></div>
 </div>
 
 
@@ -391,8 +391,8 @@ $n$ عدد طبیعی داریم. به یک جفت $(a, b)$ از اعداد خو
 <details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - محسن زارع</summary>
 
 
-<div class="problem-solution-video"><video controls preload="none" src="https://files.da-sut.ir/assignments/tamrin-4/min-max-cost-k-flow/solution/2026-06-16T103140Z0000/DA_14.mp4"></video>
-<div class="problem-solution-attachments"><strong>فایل‌های همراه</strong><ul><li><a href="https://files.da-sut.ir/assignments/tamrin-4/min-max-cost-k-flow/solution/2026-06-16T103140Z0000/Answer.pdf">Answer.pdf</a></li></ul></div>
+<div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-04-q14-solution-video.mp4"></video>
+<div class="problem-solution-attachments"><strong>فایل‌های همراه</strong><ul><li><a href="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-04-q14-solution-notes.pdf">Answer.pdf</a></li></ul></div>
 </div>
 
 
@@ -419,7 +419,7 @@ $n$ عدد طبیعی داریم. به یک جفت $(a, b)$ از اعداد خو
 <details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - کیان تراکمه</summary>
 
 
-<div class="problem-solution-video"><video controls preload="none" src="https://files.da-sut.ir/assignments/tamrin-4/disjoint-path/solution/2026-06-15T125628Z0000/da.webm"></video></div>
+<div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-04-q15-solution-video.webm"></video></div>
 
 
 </details>
@@ -447,7 +447,7 @@ $n$ عدد طبیعی داریم. به یک جفت $(a, b)$ از اعداد خو
 <details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - مهدی شیرین بیان</summary>
 
 
-<div class="problem-solution-video"><video controls preload="none" src="https://files.da-sut.ir/assignments/tamrin-4/increasing-flow/solution/2026-06-15T121349Z0000/out3.mp4"></video></div>
+<div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-04-q16-solution-video.mp4"></video></div>
 
 
 </details>
@@ -475,7 +475,7 @@ $n$ عدد طبیعی داریم. به یک جفت $(a, b)$ از اعداد خو
 <details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - محمدامین فخری</summary>
 
 
-<div class="problem-solution-video"><video controls preload="none" src="https://files.da-sut.ir/assignments/tamrin-4/brother/solution/2026-06-21T172600Z0000/petal_20260621_022328.mp4"></video></div>
+<div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-04-q17-solution-video.mp4"></video></div>
 
 
 </details>
@@ -503,8 +503,8 @@ $n$ عدد طبیعی داریم. به یک جفت $(a, b)$ از اعداد خو
 <details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - Negar yarahmadi</summary>
 
 
-<div class="problem-solution-video"><video controls preload="none" src="https://files.da-sut.ir/assignments/tamrin-4/chess-tour/solution/2026-06-16T164914Z0000/chess.mkv"></video>
-<div class="problem-solution-attachments"><strong>فایل‌های همراه</strong><ul><li><a href="https://files.da-sut.ir/assignments/tamrin-4/chess-tour/solution/2026-06-16T164914Z0000/18_chessProblem.pdf">18_chessProblem.pdf</a></li></ul></div>
+<div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-04-q18-solution-video.mkv"></video>
+<div class="problem-solution-attachments"><strong>فایل‌های همراه</strong><ul><li><a href="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-04-q18-solution-notes.pdf">18_chessProblem.pdf</a></li></ul></div>
 </div>
 
 
@@ -550,8 +550,8 @@ $n$ عدد طبیعی داریم. به یک جفت $(a, b)$ از اعداد خو
 <details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - ثنا نیرومند</summary>
 
 
-<div class="problem-solution-video"><video controls preload="none" src="https://files.da-sut.ir/assignments/tamrin-4/project/solution/2026-06-16T185930Z0000/4312506121625840054.mp4"></video>
-<div class="problem-solution-attachments"><strong>فایل‌های همراه</strong><ul><li><a href="https://files.da-sut.ir/assignments/tamrin-4/project/solution/2026-06-16T185930Z0000/solution.pdf">solution.pdf</a></li></ul></div>
+<div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-04-q20-solution-video.mp4"></video>
+<div class="problem-solution-attachments"><strong>فایل‌های همراه</strong><ul><li><a href="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-04-q20-solution-notes.pdf">solution.pdf</a></li></ul></div>
 </div>
 
 
@@ -578,8 +578,8 @@ $n$ عدد طبیعی داریم. به یک جفت $(a, b)$ از اعداد خو
 <details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - نرگس کاری</summary>
 
 
-<div class="problem-solution-video"><video controls preload="none" src="https://files.da-sut.ir/assignments/tamrin-4/restaurant/solution/2026-06-16T205527Z0000/Screen-Recording-2026-06-17-000952.mp4"></video>
-<div class="problem-solution-attachments"><strong>فایل‌های همراه</strong><ul><li><a href="https://files.da-sut.ir/assignments/tamrin-4/restaurant/solution/2026-06-16T205527Z0000/Maximizing-Menu-Profit.pdf">Maximizing-Menu-Profit.pdf</a></li></ul></div>
+<div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-04-q21-solution-video.mp4"></video>
+<div class="problem-solution-attachments"><strong>فایل‌های همراه</strong><ul><li><a href="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-04-q21-solution-notes.pdf">Maximizing-Menu-Profit.pdf</a></li></ul></div>
 </div>
 
 
@@ -609,7 +609,7 @@ $n$ عدد طبیعی داریم. به یک جفت $(a, b)$ از اعداد خو
 <details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - رادین بهارصفت</summary>
 
 
-<div class="problem-solution-video"><video controls preload="none" src="https://files.da-sut.ir/assignments/tamrin-4/minimum-bottleneck/solution/2026-06-17T203532Z0000/Org2.mp4"></video></div>
+<div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-04-q22-solution-video.mp4"></video></div>
 
 
 </details>
@@ -645,8 +645,8 @@ DSU
 <details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - صبا خانمحمدی ابهری</summary>
 
 
-<div class="problem-solution-video"><video controls preload="none" src="https://files.da-sut.ir/assignments/tamrin-4/dsu-undo/solution/2026-06-16T165422Z0000/DA_Q23.mp4"></video>
-<div class="problem-solution-attachments"><strong>فایل‌های همراه</strong><ul><li><a href="https://files.da-sut.ir/assignments/tamrin-4/dsu-undo/solution/2026-06-16T165422Z0000/Q_23.pdf">Q_23.pdf</a></li></ul></div>
+<div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-04-q23-solution-video.mp4"></video>
+<div class="problem-solution-attachments"><strong>فایل‌های همراه</strong><ul><li><a href="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-04-q23-solution-notes.pdf">Q_23.pdf</a></li></ul></div>
 </div>
 
 
@@ -676,8 +676,8 @@ DSU
 <details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - فاطیما تیمارچی</summary>
 
 
-<div class="problem-solution-video"><video controls preload="none" src="https://files.da-sut.ir/assignments/tamrin-4/2d-plane-mst/solution/2026-06-12T181433Z0000/video_question_24.mp4"></video>
-<div class="problem-solution-attachments"><strong>فایل‌های همراه</strong><ul><li><a href="https://files.da-sut.ir/assignments/tamrin-4/2d-plane-mst/solution/2026-06-12T181433Z0000/question_24.pdf">question_24.pdf</a></li></ul></div>
+<div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-04-q24-solution-video.mp4"></video>
+<div class="problem-solution-attachments"><strong>فایل‌های همراه</strong><ul><li><a href="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-04-q24-solution-notes.pdf">question_24.pdf</a></li></ul></div>
 </div>
 
 
@@ -702,7 +702,7 @@ DSU
 <details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - سهیل سیاح ورگ</summary>
 
 
-<div class="problem-solution-video"><video controls preload="none" src="https://files.da-sut.ir/assignments/tamrin-4/unique-mst/solution/2026-06-16T065851Z0000/25.mp4"></video></div>
+<div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-04-q25-solution-video.mp4"></video></div>
 
 
 </details>
@@ -782,8 +782,8 @@ $\mathcal{O}((s + m) \log (s + m))$
 <details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - محمد بنی‌احمدی</summary>
 
 
-<div class="problem-solution-video"><video controls preload="none" src="https://files.da-sut.ir/assignments/tamrin-4/edges-in-mst/solution/2026-06-15T151708Z0000/1000063082.mp4"></video>
-<div class="problem-solution-attachments"><strong>فایل‌های همراه</strong><ul><li><a href="https://files.da-sut.ir/assignments/tamrin-4/edges-in-mst/solution/2026-06-15T151708Z0000/HW4_Q28.pdf">HW4_Q28.pdf</a></li></ul></div>
+<div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-04-q28-solution-video.mp4"></video>
+<div class="problem-solution-attachments"><strong>فایل‌های همراه</strong><ul><li><a href="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-04-q28-solution-notes.pdf">HW4_Q28.pdf</a></li></ul></div>
 </div>
 
 
@@ -846,7 +846,7 @@ $\mathcal{O}((n+m) log(n))$
 <details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - زهرا امیربیگی</summary>
 
 
-<div class="problem-solution-video"><video controls preload="none" src="https://files.da-sut.ir/assignments/tamrin-4/pyramid-company/solution/2026-06-16T141644Z0000/2026-06-15-.mov"></video></div>
+<div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-04-q31-solution-video.mov"></video></div>
 
 
 </details>
@@ -896,7 +896,7 @@ $\mathcal{O}((n+m) log(n))$
 <details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - میلاد رستمی</summary>
 
 
-<div class="problem-solution-video"><video controls preload="none" src="https://files.da-sut.ir/assignments/tamrin-4/lr-flow/solution/2026-06-16T172213Z0000/2026-06-16-19-08-46.mp4"></video></div>
+<div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-04-q33-solution-video.mp4"></video></div>
 
 
 </details>
@@ -982,8 +982,8 @@ $(S_1 \cup S_2, T_1 \cap T_2)$
 <details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - علیرضا منصوری</summary>
 
 
-<div class="problem-solution-video"><video controls preload="none" src="https://files.da-sut.ir/assignments/tamrin-4/cut-operation/solution/2026-06-16T165156Z0000/last_36.mp4"></video>
-<div class="problem-solution-attachments"><strong>فایل‌های همراه</strong><ul><li><a href="https://files.da-sut.ir/assignments/tamrin-4/cut-operation/solution/2026-06-16T165156Z0000/36-2-.pdf">36-2-.pdf</a></li></ul></div>
+<div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-04-q36-solution-video.mp4"></video>
+<div class="problem-solution-attachments"><strong>فایل‌های همراه</strong><ul><li><a href="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-04-q36-solution-notes.pdf">36-2-.pdf</a></li></ul></div>
 </div>
 
 
@@ -1021,8 +1021,8 @@ $(S_1 \cup S_2, T_1 \cap T_2)$
 <details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - سیدمحمدیاسین حاجی‌خلیلی</summary>
 
 
-<div class="problem-solution-video"><video controls preload="none" src="https://files.da-sut.ir/assignments/tamrin-4/unique-min-cut/solution/2026-06-16T154513Z0000/Rec-0043.mp4"></video>
-<div class="problem-solution-attachments"><strong>فایل‌های همراه</strong><ul><li><a href="https://files.da-sut.ir/assignments/tamrin-4/unique-min-cut/solution/2026-06-16T154513Z0000/DA_HW4T_P37.pdf">DA_HW4T_P37.pdf</a></li></ul></div>
+<div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-04-q37-solution-video.mp4"></video>
+<div class="problem-solution-attachments"><strong>فایل‌های همراه</strong><ul><li><a href="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-04-q37-solution-notes.pdf">DA_HW4T_P37.pdf</a></li></ul></div>
 </div>
 
 

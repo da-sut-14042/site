@@ -11,7 +11,10 @@ dynamic application controls have been removed.
 
 - Source: `da:~/website/student-site`
 - Retrieved read-only: 2026-08-22T23:00:22Z
-- Media: still served from `https://files.da-sut.ir/`
+- Media: 195 referenced files archived in the
+  [`media-2026-08-23` GitHub Release](https://github.com/da-sut-14042/site/releases/tag/media-2026-08-23)
+
+Files that were not referenced by this archive were not transferred.
 
 The Markdown is a one-time archive snapshot. This repository does not depend
 on the production database or backend to build.

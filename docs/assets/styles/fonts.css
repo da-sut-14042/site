@@ -11,6 +11,9 @@
 :root {
   --md-text-font: Vazirmatn;
   --md-code-font: monospace;
+}
+
+html[dir="rtl"] {
   direction: rtl;
   writing-mode: horizontal-tb;
   text-orientation: mixed;

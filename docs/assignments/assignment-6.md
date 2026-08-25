@@ -1,88 +1,10 @@
+---
+assignment: true
+---
+
 # تمرین ۶
 
-
-
-
-<div class="assignment-problem-filter" data-assignment-problem-filter markdown="0">
-  <span>نمایش:</span>
-  <button type="button" data-filter-mode="all" aria-pressed="true">همه سوال‌ها</button>
-  <button type="button" data-filter-mode="deliverable" aria-pressed="false">سوالات تحویلی</button>
-</div>
-<style>
-.assignment-problem-filter {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: .45rem;
-  margin: 1rem 0 1.25rem;
-  color: var(--md-default-fg-color--light);
-  font-size: .9rem;
-}
-.assignment-problem-filter button {
-  border: 1px solid var(--md-default-fg-color--lightest);
-  border-radius: 999px;
-  padding: .25rem .7rem;
-  background: var(--md-default-bg-color);
-  color: var(--md-default-fg-color);
-  cursor: pointer;
-  font: inherit;
-}
-.assignment-problem-filter button[aria-pressed="true"] {
-  border-color: var(--md-primary-fg-color);
-  background: var(--md-primary-fg-color);
-  color: var(--md-primary-bg-color);
-}
-</style>
-<script>
-(function () {
-  const scriptEl = document.currentScript;
-
-  function init() {
-    const root = (scriptEl && scriptEl.closest(".md-content")) || document;
-    const controls = root.querySelector("[data-assignment-problem-filter]");
-    if (!controls || controls.dataset.bound) return;
-    controls.dataset.bound = "1";
-    const problems = Array.from(root.querySelectorAll("h2.problem"));
-
-    function setProblemVisible(heading, visible) {
-      heading.style.display = visible ? "" : "none";
-      const prev = heading.previousElementSibling;
-      if (prev && prev.matches("hr.problem-break")) {
-        prev.style.display = visible ? "" : "none";
-      }
-      let el = heading.nextElementSibling;
-      while (el && !el.matches("h2")) {
-        el.style.display = visible ? "" : "none";
-        el = el.nextElementSibling;
-      }
-    }
-
-    function apply(mode) {
-      controls.querySelectorAll("[data-filter-mode]").forEach((btn) => {
-        btn.setAttribute("aria-pressed", btn.dataset.filterMode === mode ? "true" : "false");
-      });
-      problems.forEach((heading) => {
-        setProblemVisible(
-          heading,
-          mode !== "deliverable" || heading.classList.contains("problem-deliverable")
-        );
-      });
-    }
-
-    controls.addEventListener("click", (ev) => {
-      const btn = ev.target.closest("[data-filter-mode]");
-      if (!btn) return;
-      apply(btn.dataset.filterMode || "all");
-    });
-  }
-
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", init, { once: true });
-  } else {
-    init();
-  }
-})();
-</script>
+<div data-assignment-problem-filter></div>
 
 
 ## میو
@@ -94,7 +16,7 @@
 
 
 <div class="admonition example problem-statement" data-problem-slug="hw6-9374" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 فرض کنید یک کاهش چندجمله‌ای (polynomial reduction) از مسئله‌ی $1$ به مسئله‌ی $2$ داریم. درستی یا نادرستی هرکدام از گزاره‌های زیر را در یک یا دو جمله توضیح دهید.
 
@@ -111,11 +33,11 @@
 
 
 <div class="admonition example problem-statement" data-problem-slug="hw6-fef3" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
-ثابت کنید پیدا کردن دو جواب متمایز برای صادق شدن یک $\text{3-CNF}$ یک مسئله NP-complete است.
+ثابت کنید مسئلهٔ تصمیم زیر NP-complete است: آیا یک فرمول $\text{3-CNF}$ دست‌کم دو انتساب ارزش متمایز دارد که آن را صادق کنند؟
 
-می‌توانید در گام اول ثابت کنید این مسئله یک راه حل NP دارد، سپس ثابت کنید $\text{3-SAT}$ به آن کاهش می‌یابد.
+می‌توانید ابتدا ثابت کنید این مسئله در NP قرار دارد و سپس نشان دهید $\text{3-SAT}$ به آن کاهش می‌یابد.
 </div>
 
 
@@ -125,9 +47,9 @@
 
 
 <div class="admonition example problem-statement" data-problem-slug="hw6-CFEB" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
-مسئله‌ی Subset-Sum می‌پرسد که آیا چندمجموعه از اعداد صحیح مثبت، تعدادی زیرمجموعه دارد که مجموع آن دقیقاً برابر مقدار $T$ باشد.
+در مسئلهٔ Subset-Sum، یک چندمجموعه از اعداد صحیح مثبت و یک عدد هدف $T$ داده می‌شود. پرسش این است که آیا زیرمجموعه‌ای از اعداد داده‌شده وجود دارد که مجموع اعضای آن دقیقاً برابر $T$ باشد؟
 
 - **(الف)** نشان دهید که چگونه متغیرها و clauseهای یک نمونه‌ی 3-SAT را می‌توان به صورت ارقام انتخاب‌شده‌ی خاصی از اعداد در مبنای $B$ انکود کرد، به‌طوری‌که انتخاب یک عدد $\iff$ نسبت‌دادن مقدار `True` به گزاره‌ی مربوطه باشد.
 - **(ب)** به‌طور خلاصه استدلال کنید که وجود یک زیرمجموعه با مجموع $T$ $\iff$ فرمول اولیه satisfiable است.
@@ -141,13 +63,13 @@
 
 
 <div class="admonition example problem-statement" data-problem-slug="hw6-C421" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
-در مسئله‌ی vertex cover به ما یک گراف $G = \langle V,E \rangle$ داده می‌شود و ما به دنبال کوچک‌ترین مجموعه از رئوس مثل $S$ هستیم به طوری که به ازای هر یال مثل $(u,v) \in E$ حداقل یکی از رئوس $u$ یا $v$ عضو $S$ باشند. با کاهش مسئله‌ی 3-SAT به مسئله‌ی vertex cover ثابت کنید که این مسئله NP-complete است.
+در نسخهٔ تصمیم مسئلهٔ Vertex Cover، یک گراف $G=(V,E)$ و یک عدد صحیح نامنفی $k$ داده می‌شود. پرسش این است که آیا مجموعه‌ای $S\subseteq V$ با $|S|\le k$ وجود دارد، به طوری که برای هر یال $(u,v)\in E$ دست‌کم یکی از دو رأس $u$ یا $v$ عضو $S$ باشد؟ با کاهش مسئلهٔ 3-SAT به Vertex Cover ثابت کنید که این مسئله NP-complete است.
 </div>
 
 
-<details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - پوریازارعی</summary>
+<details class="success problem-solution problem-video-solution" markdown="1"><summary><span data-ui-string="solution">پاسخ</span> <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - پوریازارعی</summary>
 
 
 <div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-06-q04-solution-video.mp4"></video></div>
@@ -162,7 +84,7 @@
 
 
 <div class="admonition example problem-statement" data-problem-slug="hw6-8FC6" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 مسئله‌ی Rectangle Tiling را در نظر بگیرید که در آن باید تشخیص داد آیا یک ناحیه $R$ را می‌توان با استفاده از کاشی‌هایی از یک مجموعه $T$ پوشاند، به طوری که هر کاشی فقط یک‌بار استفاده شود. در این مسئله، هم $R$ و هم کاشی‌های موجود در $T$ همگی مستطیل هستند. نشان دهید که Rectangle Tiling زمانی که ارتفاع و عرض مستطیل‌ها به صورت دودویی (binary) داده شده باشند، یک مسئله‌ی NP-complete است.
 
@@ -170,7 +92,7 @@
 </div>
 
 
-<details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - کسری منتظری</summary>
+<details class="success problem-solution problem-video-solution" markdown="1"><summary><span data-ui-string="solution">پاسخ</span> <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - کسری منتظری</summary>
 
 
 <div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-06-q05-solution-video.mp4"></video></div>
@@ -179,19 +101,19 @@
 </details>
 
 
-## سوال ۶ — پوشش مجموعه‌ای { #problem-hw6-CE68 .problem .problem-optional }
+## سوال ۶ — مجموعهٔ اصابت (Hitting Set) { #problem-hw6-CE68 .problem .problem-optional }
 
 
 
 
 <div class="admonition example problem-statement" data-problem-slug="hw6-CE68" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
-مجموعه‌های $\{S_1, S_2, \dots, S_n\}$ داده شده‌اند. می‌خواهیم زیرمجموعه‌ای با کمترین تعداد عضو از اجتماع $S_i$ها را بیابیم که با هر یک از $S_i$ها اشتراک ناتهی داشته باشد. ثابت کنید این مسئله NP-complete است.
+مجموعه‌های $\{S_1,S_2,\dots,S_n\}$ و یک عدد صحیح نامنفی $k$ داده شده‌اند. آیا مجموعه‌ای $H\subseteq \bigcup_{i=1}^{n}S_i$ با $|H|\le k$ وجود دارد که برای هر $i$، اشتراک $H\cap S_i$ ناتهی باشد؟ ثابت کنید این مسئلهٔ تصمیم NP-complete است.
 </div>
 
 
-<details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - محمدامین حیدری</summary>
+<details class="success problem-solution problem-video-solution" markdown="1"><summary><span data-ui-string="solution">پاسخ</span> <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - محمدامین حیدری</summary>
 
 
 <div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-06-q06-solution-video.mp4"></video></div>
@@ -206,9 +128,9 @@
 
 
 <div class="admonition example problem-statement" data-problem-slug="hw6-FE98" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
-در مسئله‌ی edge cover به ما یک گراف $G = \langle V,E \rangle$ داده می‌شود و ما به دنبال کوچک‌ترین مجموعه از یال‌ها مثل $S$ هستیم به طوری که به ازای هر راس مثل $v \in V$ حداقل یکی از یال‌های مجاور آن عضو $S$ باشند. ثابت کنید $\text{edge cover} \in P$.
+در مسئلهٔ Edge Cover، یک گراف $G=(V,E)$ داده می‌شود و هدف یافتن کوچک‌ترین مجموعهٔ یال‌ها مانند $S\subseteq E$ است، به طوری که هر رأس $v\in V$ دست‌کم با یکی از یال‌های عضو $S$ مجاور باشد. اگر گراف رأس منفرد داشته باشد، هیچ پوشش یالی‌ای وجود ندارد؛ در غیر این صورت، با استفاده از یک تطابق بیشینه ثابت کنید که می‌توان یک پوشش یالی کمینه را در زمان چندجمله‌ای یافت و در نتیجه $\text{Edge Cover}\in P$ است.
 </div>
 
 
@@ -218,7 +140,7 @@
 
 
 <div class="admonition example problem-statement" data-problem-slug="hw6-C297" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 ثابت کنید اگر $\text{coNP} \neq \text{NP}$ در آن صورت $P \neq NP$.
 </div>
@@ -230,7 +152,7 @@
 
 
 <div class="admonition example problem-statement" data-problem-slug="hw6-ECC5" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 یک عبارت بولی به شکل DNF است اگر از ترکیب فصلی تعدادی بند عطفی (AND clause) تشکیل شده باشد. به طور مثال، یک عبارت DNF در زیر آمده است.
 
@@ -251,7 +173,7 @@
 </div>
 
 
-<details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - غزاله کریمی</summary>
+<details class="success problem-solution problem-video-solution" markdown="1"><summary><span data-ui-string="solution">پاسخ</span> <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - غزاله کریمی</summary>
 
 
 <div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-06-q09-solution-video.mp4"></video>
@@ -268,13 +190,13 @@
 
 
 <div class="admonition example problem-statement" data-problem-slug="hw6-12F8" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
-یک شرکت پستی باید $n$ مرسوله با وزن‌های $a_1, a_2, \dots, a_n$ کیلوگرم را بین دو شهر جابه‌جا کند و برای این‌کار ماشین‌هایی با ظرفیت $B$ کیلوگرم بار در اختیار دارد. نشان دهید مسئله‌ی پیدا کردن کمترین تعداد ماشین لازم برای این‌کار NP-complete است.
+یک شرکت پستی باید $n$ مرسوله با وزن‌های $a_1,a_2,\dots,a_n$ کیلوگرم را بین دو شهر جابه‌جا کند و ماشین‌هایی با ظرفیت $B$ کیلوگرم در اختیار دارد. همچنین عدد صحیح نامنفی $k$ داده شده است. آیا می‌توان همهٔ مرسوله‌ها را با حداکثر $k$ ماشین جابه‌جا کرد، به طوری که مجموع وزن مرسوله‌های هر ماشین از $B$ بیشتر نشود؟ ثابت کنید این مسئلهٔ تصمیم NP-complete است.
 </div>
 
 
-<details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - امیرحسین اسفندیاری</summary>
+<details class="success problem-solution problem-video-solution" markdown="1"><summary><span data-ui-string="solution">پاسخ</span> <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - امیرحسین اسفندیاری</summary>
 
 
 <div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-06-q10-solution-video.mkv"></video></div>
@@ -289,13 +211,13 @@
 
 
 <div class="admonition example problem-statement" data-problem-slug="hw6-2BF1" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 می‌خواهیم راس‌های یک گراف را با رنگ‌های قرمز، آبی و زرد به گونه‌ای رنگ کنیم که رئوس مجاور آن ناهمرنگ باشند. ثابت کنید اگر مسئله‌ی 3-CNF را بتوانیم در زمان چندجمله‌ای حل کنیم، این مسئله را نیز می‌توان در زمان چندجمله‌ای حل کرد.
 </div>
 
 
-<details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - حسنا شاه حیدری</summary>
+<details class="success problem-solution problem-video-solution" markdown="1"><summary><span data-ui-string="solution">پاسخ</span> <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - حسنا شاه حیدری</summary>
 
 
 <div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-06-q11-solution-video.mov"></video></div>
@@ -310,7 +232,7 @@
 
 
 <div class="admonition example problem-statement" data-problem-slug="hw6-9FE2" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 فرض کنید $G$ یک گراف بدون‌جهت باشد. مسائل زیر را در نظر بگیرید:
 
@@ -328,7 +250,7 @@
 
 
 <div class="admonition example problem-statement" data-problem-slug="hw6-9C91" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 مسئله‌ی $CNF_k$ را به این صورت در نظر بگیرید: آیا یک فرمول CNF که در آن هر متغیر حداکثر در $k$ مکان ظاهر شده است، ارضاپذیر (satisfiable) است؟
 با توجه به این تعریف، به سوالات زیر پاسخ دهید:
@@ -344,7 +266,7 @@
 
 
 <div class="admonition example problem-statement" data-problem-slug="hw6-8153" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 یک برش (cut) در یک گراف بدون‌جهت، یک بخش‌بندی از رئوس گراف به دو مجموعه‌ی مجزای $S$ و $T$ است. اندازه‌ی یک برش برابر تعداد یال‌هایی از گراف است که یک سر آن‌ها در $S$ و دیگری در $T$ قرار دارد.
 
@@ -360,7 +282,7 @@
 
 
 <div class="admonition example problem-statement" data-problem-slug="hw6-7B84" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 در نظریه‌ی گراف، یک کلیک (clique) یا زیرگراف کامل، مجموعه‌ای از رئوس است که هر دو رأس متمایز آن با یک یال مستقیماً به هم متصل شده باشند. 
 
@@ -376,7 +298,7 @@
 
 
 <div class="admonition example problem-statement" data-problem-slug="hw6-3297" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 نشان دهید اگر $P=NP$ آنگاه می‌توانیم اعداد صحیح را در زمان چندجمله‌ای تجزیه کنیم.
 </div>
@@ -388,7 +310,7 @@
 
 
 <div class="admonition example problem-statement" data-problem-slug="hw6-2efb" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 برنامه‌ی خطی زیر را در نظر بگیرید:
 
@@ -418,7 +340,7 @@ x_1, x_2 &\ge 0.
 
 
 <div class="admonition example problem-statement" data-problem-slug="harris" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 یک کارگاه دو نوع محصول $A$ و $B$ تولید می‌کند. تولید هر واحد $A$، دو واحد ماده‌ی اولیه و یک ساعت زمان لازم دارد و سود آن $5$ واحد است. تولید هر واحد $B$، یک واحد ماده‌ی اولیه و سه ساعت زمان لازم دارد و سود آن $6$ واحد است. کارگاه در کل $100$ واحد ماده‌ی اولیه و $90$ ساعت زمان دارد.
 
@@ -432,7 +354,7 @@ x_1, x_2 &\ge 0.
 
 
 <div class="admonition example problem-statement" data-problem-slug="hw6-E4E4" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 گراف جهت‌دار زیر داده شده است:
 
@@ -456,7 +378,7 @@ d_v \le d_u + w(u,v).
 </div>
 
 
-<details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - نرگس کاری</summary>
+<details class="success problem-solution problem-video-solution" markdown="1"><summary><span data-ui-string="solution">پاسخ</span> <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - نرگس کاری</summary>
 
 
 <div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-06-q19-solution-video.mp4"></video>
@@ -473,7 +395,7 @@ d_v \le d_u + w(u,v).
 
 
 <div class="admonition example problem-statement" data-problem-slug="hw6-C4DD" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 شبکه‌ی زیر را در نظر بگیرید:
 
@@ -489,7 +411,7 @@ s \to a: 3, \qquad s \to b: 2, \qquad a \to b: 1, \qquad a \to t: 2, \qquad b \t
 </div>
 
 
-<details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - سید محمد مهدی حسینی</summary>
+<details class="success problem-solution problem-video-solution" markdown="1"><summary><span data-ui-string="solution">پاسخ</span> <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - سید محمد مهدی حسینی</summary>
 
 
 <div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-06-q20-solution-video.mp4"></video></div>
@@ -504,7 +426,7 @@ s \to a: 3, \qquad s \to b: 2, \qquad a \to b: 1, \qquad a \to t: 2, \qquad b \t
 
 
 <div class="admonition example problem-statement" data-problem-slug="hw6-E3C4" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 فرض کنید $P$ مجموعه‌ی همه‌ی مسیرهای از $s$ به $t$ در یک شبکه‌ی جهت‌دار باشد. برای هر مسیر $p$، متغیر $x_p$ نشان می‌دهد چه مقدار شار از مسیر $p$ عبور می‌کند. برنامه‌ی خطی زیر را در نظر بگیرید:
 
@@ -533,7 +455,7 @@ x_p &\ge 0.
 
 
 <div class="admonition example problem-statement" data-problem-slug="hw6-9A44" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 سه کارگر و سه کار داریم. هزینه‌ی انجام کار $j$ توسط کارگر $i$ در ماتریس زیر آمده است:
 
@@ -549,7 +471,7 @@ C = \begin{bmatrix}
 </div>
 
 
-<details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - سجاد عاقلی</summary>
+<details class="success problem-solution problem-video-solution" markdown="1"><summary><span data-ui-string="solution">پاسخ</span> <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - سجاد عاقلی</summary>
 
 
 <div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-06-q22-solution-video.mp4"></video>
@@ -566,7 +488,7 @@ C = \begin{bmatrix}
 
 
 <div class="admonition example problem-statement" data-problem-slug="hw6-1980" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 چندضلعی محدب زیر در صفحه داده شده است:
 
@@ -584,7 +506,7 @@ C = \begin{bmatrix}
 
 
 <div class="admonition example problem-statement" data-problem-slug="hw6-e199" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 برنامه‌ی خطی زیر را به فرم استاندارد
 
@@ -610,7 +532,7 @@ x_1 \ge 0, \qquad x_2 &\text{ is unrestricted}, \qquad x_3 \le 0.
 </div>
 
 
-<details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - علی نعمت دوست</summary>
+<details class="success problem-solution problem-video-solution" markdown="1"><summary><span data-ui-string="solution">پاسخ</span> <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - علی نعمت دوست</summary>
 
 
 <div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-06-q24-solution-video.mp4"></video></div>
@@ -625,7 +547,7 @@ x_1 \ge 0, \qquad x_2 &\text{ is unrestricted}, \qquad x_3 \le 0.
 
 
 <div class="admonition example problem-statement" data-problem-slug="hw6-5948" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 برنامه‌ی خطی زیر را به فرم اسلک (slack form) تبدیل کنید و جواب پایه‌ای اولیه را بنویسید:
 
@@ -645,7 +567,7 @@ x, y &\ge 0.
 </div>
 
 
-<details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - مهدی نعمتی</summary>
+<details class="success problem-solution problem-video-solution" markdown="1"><summary><span data-ui-string="solution">پاسخ</span> <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - مهدی نعمتی</summary>
 
 
 <div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-06-q25-solution-video.mp4"></video></div>
@@ -660,7 +582,7 @@ x, y &\ge 0.
 
 
 <div class="admonition example problem-statement" data-problem-slug="hw6-013C" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 نشان دهید برنامه‌ی خطی زیر بی‌کران است:
 
@@ -686,7 +608,7 @@ x_1, x_2 &\ge 0.
 
 
 <div class="admonition example problem-statement" data-problem-slug="hw6-6BAC" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 نشان دهید برنامه‌ی خطی زیر نشدنی (infeasible) است:
 
@@ -712,13 +634,13 @@ x_1, x_2 &\ge 0.
 
 
 <div class="admonition example problem-statement" data-problem-slug="hw6-2FB2" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 برای یک گراف دوبخشی $G = (L \cup R, E)$، برنامه‌ی خطی کمینه‌سازی پوشش رأسی را بنویسید. سپس دوگان آن را حساب کنید و توضیح دهید چرا دوگان، همان برنامه‌ی خطی تطابق است.
 </div>
 
 
-<details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - علی مقدسی</summary>
+<details class="success problem-solution problem-video-solution" markdown="1"><summary><span data-ui-string="solution">پاسخ</span> <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - علی مقدسی</summary>
 
 
 <div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-06-q28-solution-video.mp4"></video>
@@ -735,7 +657,7 @@ x_1, x_2 &\ge 0.
 
 
 <div class="admonition example problem-statement" data-problem-slug="duality-3" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 تعدادی بازه‌ی زمانی به صورت $(s_i, f_i)$ داده شده‌اند.
 
@@ -753,7 +675,7 @@ x_1, x_2 &\ge 0.
 
 
 <div class="admonition example problem-statement" data-problem-slug="duality-1" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 برنامه‌ی زمانی بازی‌های جام جهانی مشخص شده اما هنوز محل برگزاری اون مشخص نیست.
 در کل $n$ تا بازی داریم که هر بازی در یک بازه‌ی زمانی مشخص برگزار میشه. (برای روی گل سوال طول بازه‌ها لزوما برابر نیستن). منطقا دو تا بازی که تداخل زمانی دارند نمی‌تونن توی یه استادیوم برگزار بشن. اما اگه یکیشون ۹ شب تموم بشه اون یکی ۹ شب تازه شروع بشه کاملا اوکیه که تو یه استادیوم برگزار بشن.
@@ -769,7 +691,7 @@ $\mathcal{O}(n\ log\  n)$ ارائه دهید که این تعداد را محا
 
 
 <div class="admonition example problem-statement" data-problem-slug="duality-2" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 فرض کنید $n$ جعبه داریم که می‌خواهیم در اثاث‌کشی آن‌ها را جا به جا کنیم. جعبه‌ها دو بعدی هستند.
 
@@ -792,7 +714,7 @@ $$
 </details>
 
 
-<details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - روژین تقی‌زادگان</summary>
+<details class="success problem-solution problem-video-solution" markdown="1"><summary><span data-ui-string="solution">پاسخ</span> <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - روژین تقی‌زادگان</summary>
 
 
 <div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-06-q31-solution-video.mp4"></video></div>
@@ -807,7 +729,7 @@ $$
 
 
 <div class="admonition example problem-statement" data-problem-slug="hw6-0D81" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 گراف دوبخشی زیر را در نظر بگیرید:
 
@@ -823,7 +745,7 @@ E = \{(a, 1), (a, 2), (b, 2), (b, 3)\}.
 </div>
 
 
-<details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - فاطیما تیمارچی</summary>
+<details class="success problem-solution problem-video-solution" markdown="1"><summary><span data-ui-string="solution">پاسخ</span> <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - فاطیما تیمارچی</summary>
 
 
 <div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-06-q32-solution-video.mp4"></video>
@@ -840,7 +762,7 @@ E = \{(a, 1), (a, 2), (b, 2), (b, 3)\}.
 
 
 <div class="admonition example problem-statement" data-problem-slug="hw6-AEBF" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 در برنامه‌نویسی خطی غیراستاندارد، ممکن است تعدادی از متغیرها بدون هیچ محدودیتی باشند. در حالی که در فرم استاندارد، لازم است که تمام متغیرها بزرگتر مساوی با صفر باشند. نشان دهید که چگونه می‌توان در تبدیل فرم غیراستاندارد به استاندارد، این مشکل را حل کرد.
 </div>
@@ -852,7 +774,7 @@ E = \{(a, 1), (a, 2), (b, 2), (b, 3)\}.
 
 
 <div class="admonition example problem-statement" data-problem-slug="hw6-9B19" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 مسائل زیر را به صورت برنامه‌ریزی خطی (LP) فرمول‌بندی کنید. رابطه‌ی بین جواب بهینه‌ی هر مسئله و جواب LP معادل آن را توضیح دهید.
 
@@ -902,7 +824,7 @@ E = \{(a, 1), (a, 2), (b, 2), (b, 3)\}.
 
 
 <div class="admonition example problem-statement" data-problem-slug="hw6-1802" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 تعدادی بار با جرم‌های مختلف $M_1, \dots, M_k$ در مکان‌های مختلف $P_1, \dots, P_k$ قرار دارند. همچنین تعدادی انبار در نقاط $Q_1, \dots, Q_n$ قرار دارند، به‌طوری که ظرفیت انبار $i$ام برابر با $C_i$ است (یعنی چنانچه ظرفیت انبار $2$ تن باشد، بیش از $2$ تن را نمی‌توان در آن ذخیره‌سازی نمود). هدف انتقال بهینه بارها به این انبارها است، به‌طوری‌که کل کار لازم برای انتقال بارها کمینه شود. میزان انرژی مصرف شده را برابر حاصل ضرب جرم بار انتقالی در طول مسیر طی شده آن در نظر می‌گیریم.
 
@@ -911,7 +833,7 @@ E = \{(a, 1), (a, 2), (b, 2), (b, 3)\}.
 </div>
 
 
-<details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - نیکی رشیدیان</summary>
+<details class="success problem-solution problem-video-solution" markdown="1"><summary><span data-ui-string="solution">پاسخ</span> <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - نیکی رشیدیان</summary>
 
 
 <div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-06-q35-solution-video.mkv"></video></div>
@@ -926,7 +848,7 @@ E = \{(a, 1), (a, 2), (b, 2), (b, 3)\}.
 
 
 <div class="admonition example problem-statement" data-problem-slug="hw6-30D4" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 در یک برنامه‌ی خطی بولی (Boolean linear program)، متغیر $x$ طوری محدود شده است که درایه‌های آن برابر با صفر یا یک باشند:
 
@@ -973,7 +895,7 @@ Ax &\preceq b \\
 
 
 <div class="admonition example problem-statement" data-problem-slug="hw6-539a" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 مسئله‌ی vertex cover یک مسئله‌ی NP-complete است. حال الگوریتم زیر را برای این مسئله در نظر بگیرید:
 
@@ -993,7 +915,7 @@ Ax &\preceq b \\
 
 
 <div class="admonition example problem-statement" data-problem-slug="hw6-8200" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 مسئله‌ی پوشش مجموعه (Set Cover) به این صورت تعریف می‌شود:
 یک مجموعه‌ی مرجع (Universe) به نام $U$ با اندازه‌ی $|U| = n$ و کلکسیونی از زیرمجموعه‌های آن $S_1, S_2, \dots, S_m$ داده شده است. هدف پیدا کردن کمترین تعداد از این زیرمجموعه‌هاست که اجتماع آن‌ها برابر با کل مجموعه‌ی مرجع $U$ شود.
@@ -1002,7 +924,7 @@ Ax &\preceq b \\
 </div>
 
 
-<details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - سروش داوران</summary>
+<details class="success problem-solution problem-video-solution" markdown="1"><summary><span data-ui-string="solution">پاسخ</span> <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - سروش داوران</summary>
 
 
 <div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-06-q38-solution-video.mp4"></video></div>
@@ -1017,7 +939,7 @@ Ax &\preceq b \\
 
 
 <div class="admonition example problem-statement" data-problem-slug="hw6-D6C9" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 در این نسخه از مسئله‌ی TSP، گراف کامل است و فواصل بین شهرها در نامساوی مثلثی (triangle inequality) صدق می‌کنند.
 
@@ -1025,7 +947,7 @@ Ax &\preceq b \\
 </div>
 
 
-<details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - ایلیا یزدانی</summary>
+<details class="success problem-solution problem-video-solution" markdown="1"><summary><span data-ui-string="solution">پاسخ</span> <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - ایلیا یزدانی</summary>
 
 
 <div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-06-q39-solution-video.mp4"></video></div>
@@ -1040,7 +962,7 @@ Ax &\preceq b \\
 
 
 <div class="admonition example problem-statement" data-problem-slug="hw6-2D17" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 مسئله‌ی مجموعه‌ی احاطه‌گر (Dominating Set) به این صورت تعریف می‌شود: 
 کمترین تعداد از رئوس را پیدا کنید به طوری که هر رأس در گراف، یا خودش انتخاب شده باشد و یا مجاور یک رأس انتخاب‌شده باشد.
@@ -1055,7 +977,7 @@ Ax &\preceq b \\
 
 
 <div class="admonition example problem-statement" data-problem-slug="hw6-219e" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 روش ابتکاری زیر را برای مسئله‌ی vertex cover در نظر بگیرید: یک درخت جستجوی اول عمق (DFS tree) از گراف بسازید و تمام برگ‌ها را از این درخت حذف کنید.
 
@@ -1064,7 +986,7 @@ Ax &\preceq b \\
 </div>
 
 
-<details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - ایلیا فرصتی</summary>
+<details class="success problem-solution problem-video-solution" markdown="1"><summary><span data-ui-string="solution">پاسخ</span> <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - ایلیا فرصتی</summary>
 
 
 <div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-06-q41-solution-video.mp4"></video></div>
@@ -1079,7 +1001,7 @@ Ax &\preceq b \\
 
 
 <div class="admonition example problem-statement" data-problem-slug="hw6-50D9" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 مسئله‌ی تطابق (Matching) را در نظر بگیرید:
 - **(الف)** الگوریتمی با مرتبه زمانی $O(|E|)$ طراحی کنید که یک تطابق بیشینه (maximal matching) در گراف $G$ پیدا کند.
@@ -1089,7 +1011,7 @@ Ax &\preceq b \\
 </div>
 
 
-<details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - زهرا قصابی</summary>
+<details class="success problem-solution problem-video-solution" markdown="1"><summary><span data-ui-string="solution">پاسخ</span> <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - زهرا قصابی</summary>
 
 
 <div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-06-q42-solution-video.mkv"></video></div>
@@ -1104,7 +1026,7 @@ Ax &\preceq b \\
 
 
 <div class="admonition example problem-statement" data-problem-slug="hw6-EA5B" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 یک گراف جهت‌دار $G = (V, E)$ داده شده است. هدف ما پیدا کردن بزرگ‌ترین زیرمجموعه از یال‌ها مانند $E' \subseteq E$ است، به طوری که زیرگراف $G' = (V, E')$ (گرافی روی همان مجموعه‌ی رئوس $G$ که توسط زیرمجموعه یال‌های $E'$ القا شده است) هیچ دور جهت‌داری (directed cycle) نداشته باشد.
 
@@ -1118,9 +1040,12 @@ Ax &\preceq b \\
 
 
 <div class="admonition example problem-statement" data-problem-slug="hw6-F4BE" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 در یک کشور $n$ شهر و بین هر دو شهر یک جاده وجود دارد (گراف کامل). می‌خواهیم این کشور را به $k$ استان تقسیم کنیم و هر استان یک مرکز استان داشته باشد، به طوری که بیشترین فاصله‌ی شهرها تا مرکز استان‌شان، کمترین مقدار ممکن باشد (مسئله‌ی $k$-center).
+
+**نکته:** فرض کنید فاصله‌ها یک متریک تشکیل می‌دهند؛ به‌ویژه نامساوی مثلثی برقرار است.
+
 فرض کنید جواب بهینه $d$ باشد؛ یعنی روشی برای تقسیم‌بندی وجود داشته باشد که هر شهر تا مرکز استان آن حداکثر فاصله‌ی $d$ را داشته باشد و با هیچ روش دیگری این حداکثر فاصله کمتر نشود.
 
 الگوریتمی ارائه دهید که $k$ مرکز استان را پیدا کند به طوری که فاصله‌ی هر شهر تا مرکز استان آن حداکثر $2d$ شود (یک الگوریتم 2-approximation). سپس درستی الگوریتم خود را اثبات کنید.

@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+
+{% block content %}
+  {% if page.meta and page.meta.assignment %}
+    <script id="assignment-ui-strings" type="application/json">{{ config.extra.ui_strings | tojson }}</script>
+  {% endif %}
+  {{ super() }}
+{% endblock %}

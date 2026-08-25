@@ -1,88 +1,10 @@
+---
+assignment: true
+---
+
 # تمرین ۵
 
-
-
-
-<div class="assignment-problem-filter" data-assignment-problem-filter markdown="0">
-  <span>نمایش:</span>
-  <button type="button" data-filter-mode="all" aria-pressed="true">همه سوال‌ها</button>
-  <button type="button" data-filter-mode="deliverable" aria-pressed="false">سوالات تحویلی</button>
-</div>
-<style>
-.assignment-problem-filter {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: .45rem;
-  margin: 1rem 0 1.25rem;
-  color: var(--md-default-fg-color--light);
-  font-size: .9rem;
-}
-.assignment-problem-filter button {
-  border: 1px solid var(--md-default-fg-color--lightest);
-  border-radius: 999px;
-  padding: .25rem .7rem;
-  background: var(--md-default-bg-color);
-  color: var(--md-default-fg-color);
-  cursor: pointer;
-  font: inherit;
-}
-.assignment-problem-filter button[aria-pressed="true"] {
-  border-color: var(--md-primary-fg-color);
-  background: var(--md-primary-fg-color);
-  color: var(--md-primary-bg-color);
-}
-</style>
-<script>
-(function () {
-  const scriptEl = document.currentScript;
-
-  function init() {
-    const root = (scriptEl && scriptEl.closest(".md-content")) || document;
-    const controls = root.querySelector("[data-assignment-problem-filter]");
-    if (!controls || controls.dataset.bound) return;
-    controls.dataset.bound = "1";
-    const problems = Array.from(root.querySelectorAll("h2.problem"));
-
-    function setProblemVisible(heading, visible) {
-      heading.style.display = visible ? "" : "none";
-      const prev = heading.previousElementSibling;
-      if (prev && prev.matches("hr.problem-break")) {
-        prev.style.display = visible ? "" : "none";
-      }
-      let el = heading.nextElementSibling;
-      while (el && !el.matches("h2")) {
-        el.style.display = visible ? "" : "none";
-        el = el.nextElementSibling;
-      }
-    }
-
-    function apply(mode) {
-      controls.querySelectorAll("[data-filter-mode]").forEach((btn) => {
-        btn.setAttribute("aria-pressed", btn.dataset.filterMode === mode ? "true" : "false");
-      });
-      problems.forEach((heading) => {
-        setProblemVisible(
-          heading,
-          mode !== "deliverable" || heading.classList.contains("problem-deliverable")
-        );
-      });
-    }
-
-    controls.addEventListener("click", (ev) => {
-      const btn = ev.target.closest("[data-filter-mode]");
-      if (!btn) return;
-      apply(btn.dataset.filterMode || "all");
-    });
-  }
-
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", init, { once: true });
-  } else {
-    init();
-  }
-})();
-</script>
+<div data-assignment-problem-filter></div>
 
 
 ## مقدماتی
@@ -94,7 +16,7 @@
 
 
 <div class="admonition example problem-statement" data-problem-slug="rabin-karp-classic" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 الگوریتم Rabin-Karp را درنظر بگیرید.
 
@@ -130,7 +52,7 @@
 </div>
 
 
-<div class="problem-tags problem-tags--topics"><span class="ptag ptag-topic" tabindex="0" role="button" aria-label="نمایش برچسب"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg><span class="ptag-topic__name">hash</span></span></div>
+<div class="problem-tags problem-tags--topics"><span class="ptag ptag-topic" tabindex="0" role="button" data-ui-aria-label="show_tag" aria-label="نمایش برچسب"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg><span class="ptag-topic__name">hash</span></span></div>
 
 
 ## سوال ۲ — این دفعه Trie <span class="problem-tags problem-tags--inline"><span class="ptag ptag-handwritten" title="دست‌نویس" aria-label="دست‌نویس"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M362.7 19.3L314.3 67.7 444.3 197.7l48.4-48.4 c25-25 25-65.5 0-90.5L453.3 19.3c-25-25-65.5-25-90.5 0zm-71 71L58.6 323.5 c-10.4 10.4-18 23.3-22.2 37.4L1 481.2C-1.5 489.7 .8 498.8 7 505s15.3 8.5 23.7 6l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L421.7 220.3 291.7 90.3z"/></svg></span></span> { #problem-triethistime .problem .problem-deliverable }
@@ -139,7 +61,7 @@
 
 
 <div class="admonition example problem-statement" data-problem-slug="triethistime" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 **مدیریت مجموعه‌ای از کلمات با Trie**
 
@@ -199,7 +121,7 @@ COUNT prefix
 </div>
 
 
-<div class="problem-tags problem-tags--topics"><span class="ptag ptag-topic" tabindex="0" role="button" aria-label="نمایش برچسب"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg><span class="ptag-topic__name">trie</span></span></div>
+<div class="problem-tags problem-tags--topics"><span class="ptag ptag-topic" tabindex="0" role="button" data-ui-aria-label="show_tag" aria-label="نمایش برچسب"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg><span class="ptag-topic__name">trie</span></span></div>
 
 
 ## سوال ۳ — الگوریتم جدید؟ <span class="problem-tags problem-tags--inline"><span class="ptag ptag-handwritten" title="دست‌نویس" aria-label="دست‌نویس"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M362.7 19.3L314.3 67.7 444.3 197.7l48.4-48.4 c25-25 25-65.5 0-90.5L453.3 19.3c-25-25-65.5-25-90.5 0zm-71 71L58.6 323.5 c-10.4 10.4-18 23.3-22.2 37.4L1 481.2C-1.5 489.7 .8 498.8 7 505s15.3 8.5 23.7 6l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L421.7 220.3 291.7 90.3z"/></svg></span></span> { #problem-suffixarrayclassic .problem .problem-deliverable }
@@ -208,7 +130,7 @@ COUNT prefix
 
 
 <div class="admonition example problem-statement" data-problem-slug="suffixarrayclassic" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 **جست‌وجوی الگو با استفاده از Suffix Array**
 
@@ -317,7 +239,7 @@ P = "ana"
 </div>
 
 
-<div class="problem-tags problem-tags--topics"><span class="ptag ptag-topic" tabindex="0" role="button" aria-label="نمایش برچسب"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg><span class="ptag-topic__name">SuffixArray</span></span></div>
+<div class="problem-tags problem-tags--topics"><span class="ptag ptag-topic" tabindex="0" role="button" data-ui-aria-label="show_tag" aria-label="نمایش برچسب"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg><span class="ptag-topic__name">SuffixArray</span></span></div>
 
 
 ## سوال ۴ — درخت KMP <span class="problem-tags problem-tags--inline"><span class="ptag ptag-handwritten" title="دست‌نویس" aria-label="دست‌نویس"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M362.7 19.3L314.3 67.7 444.3 197.7l48.4-48.4 c25-25 25-65.5 0-90.5L453.3 19.3c-25-25-65.5-25-90.5 0zm-71 71L58.6 323.5 c-10.4 10.4-18 23.3-22.2 37.4L1 481.2C-1.5 489.7 .8 498.8 7 505s15.3 8.5 23.7 6l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L421.7 220.3 291.7 90.3z"/></svg></span></span> { #problem-kmp-tree .problem .problem-deliverable }
@@ -326,7 +248,7 @@ P = "ana"
 
 
 <div class="admonition example problem-statement" data-problem-slug="kmp-tree" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 **درخت KMP**
 
@@ -341,13 +263,13 @@ $$s[1..k]=s[i-k+1..i]$$
 
 3. ثابت کنید که در درخت KMP رشته‌ی $s$، رأس $x$ جدّ رأس $y$ است اگر و تنها اگر $s[1..x]=s[y-x+1..y]$. به بیان دیگر $x$ جد $y$ است اگر و تنها اگر، $x$ یک prefix-suffix از $y$ باشد.
 
-4. برای هر $1 \le i \le n$، مقدار $sps_i$ (shortest prefix suffix) را طول کوتاه‌ترین prefix-suffix غیرتهی رشته‌ی $s[1..i]$ تعریف می‌کنیم. به بیان دیگر، $sps_i$ **کوچک‌ترین** عدد مثبت $k \le i$ است که $s[1..k]=s[i-k+1..i]$. الگوریتمی با پیچیدگی زمانی $O(n)$ طراحی کنید که مقادیر $sps_i$ را محاسبه کند.
+4. برای هر $1 \le i \le n$، مقدار $sps_i$ (shortest prefix suffix) را طول کوتاه‌ترین پیشوند ناتهی و **اکیداً کوتاه‌تر** از $s[1..i]$ تعریف می‌کنیم که هم‌زمان پسوند آن نیز باشد؛ اگر چنین پیشوندی وجود نداشت، $sps_i=0$ است. به بیان دیگر، در صورت وجود، $sps_i$ **کوچک‌ترین** عدد مثبت $k < i$ است که $s[1..k]=s[i-k+1..i]$. الگوریتمی با پیچیدگی زمانی $O(n)$ طراحی کنید که مقادیر $sps_i$ را محاسبه کند.
 
 5. دوره‌ی گردش یک رشته را کوچک‌ترین عدد مثبت $k$ می‌نامیم که رشته را بتوان به بلوک‌های یکسان با طول $k$ افراز کرد. برای مثال دوره گردش $s=\texttt{abababab}$ برابر با $2$ است. الگوریتمی با پیچیدگی زمانی $O(n\log n)$ طراحی کنید که برای هر $1 \le i \le n$، دوره‌ی گردش پیشوند $s[1..i]$ را محاسبه کند. برای مثال، اگر $s=\texttt{ababcababc}$ باشد، خروجی برابر است با $[1,2,3,2,5,6,7,8,9,5]$.
 </div>
 
 
-<div class="problem-tags problem-tags--topics"><span class="ptag ptag-topic" tabindex="0" role="button" aria-label="نمایش برچسب"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg><span class="ptag-topic__name">kmp</span></span></div>
+<div class="problem-tags problem-tags--topics"><span class="ptag ptag-topic" tabindex="0" role="button" data-ui-aria-label="show_tag" aria-label="نمایش برچسب"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg><span class="ptag-topic__name">kmp</span></span></div>
 
 
 ## سوال ۵ — سوال ترای کشی { #problem-trie-2 .problem .problem-optional }
@@ -356,7 +278,7 @@ $$s[1..k]=s[i-k+1..i]$$
 
 
 <div class="admonition example problem-statement" data-problem-slug="trie-2" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 ما در مسائل رشته، معمولا طول حروف الفبا را ثابت در نظر می‌گیریم. با این وجود، هم با داده ساختار map، این Trie را پیاده سازی می‌کنند و هم با آرایه. 
 
@@ -370,16 +292,16 @@ $$s[1..k]=s[i-k+1..i]$$
 
 
 <div class="admonition example problem-statement" data-problem-slug="hash-1" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 یک رشته‌ی $S$ داده شده است. در $O(|S|. \log (|S|))$ بلندترین زیررشته‌ای از $S$ را پیدا کنید که حداقل دو بار در $S$ ظاهر شده باشد.
 </div>
 
 
-<div class="problem-tags problem-tags--topics"><span class="ptag ptag-topic" tabindex="0" role="button" aria-label="نمایش برچسب"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg><span class="ptag-topic__name">hash</span></span></div>
+<div class="problem-tags problem-tags--topics"><span class="ptag ptag-topic" tabindex="0" role="button" data-ui-aria-label="show_tag" aria-label="نمایش برچسب"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg><span class="ptag-topic__name">hash</span></span></div>
 
 
-<details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - امیرمحمد نصراله نژاد</summary>
+<details class="success problem-solution problem-video-solution" markdown="1"><summary><span data-ui-string="solution">پاسخ</span> <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - امیرمحمد نصراله نژاد</summary>
 
 
 <div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-05-q06-solution-video.mp4"></video></div>
@@ -394,13 +316,13 @@ $$s[1..k]=s[i-k+1..i]$$
 
 
 <div class="admonition example problem-statement" data-problem-slug="hash-2" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 دو رشته‌ی $A$ و $B$ با طول برابر $n$ داده شده‌اند. به کمک Hash گرفتن الگوریتمی در $O(n)$ ارائه دهید تا مشخص کند $B$ یک چرخش از $A$ است یا نه.
 </div>
 
 
-<div class="problem-tags problem-tags--topics"><span class="ptag ptag-topic" tabindex="0" role="button" aria-label="نمایش برچسب"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg><span class="ptag-topic__name">hash</span></span></div>
+<div class="problem-tags problem-tags--topics"><span class="ptag ptag-topic" tabindex="0" role="button" data-ui-aria-label="show_tag" aria-label="نمایش برچسب"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg><span class="ptag-topic__name">hash</span></span></div>
 
 
 ## سوال ۸ — کلی سوال { #problem-hash-3 .problem .problem-optional }
@@ -409,7 +331,7 @@ $$s[1..k]=s[i-k+1..i]$$
 
 
 <div class="admonition example problem-statement" data-problem-slug="hash-3" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 یک رشته‌ی $S$ داده شده است. سپس $q$ کوئری داریم که هر کوئری به شکل زیر است:
 
@@ -425,10 +347,10 @@ $$S[l_2 \dots r_2]$$
 </div>
 
 
-<div class="problem-tags problem-tags--topics"><span class="ptag ptag-topic" tabindex="0" role="button" aria-label="نمایش برچسب"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg><span class="ptag-topic__name">hash</span></span></div>
+<div class="problem-tags problem-tags--topics"><span class="ptag ptag-topic" tabindex="0" role="button" data-ui-aria-label="show_tag" aria-label="نمایش برچسب"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg><span class="ptag-topic__name">hash</span></span></div>
 
 
-<details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - نوشین جواد‌زاده</summary>
+<details class="success problem-solution problem-video-solution" markdown="1"><summary><span data-ui-string="solution">پاسخ</span> <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - نوشین جواد‌زاده</summary>
 
 
 <div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-05-q08-solution-video.mp4"></video></div>
@@ -443,13 +365,13 @@ $$S[l_2 \dots r_2]$$
 
 
 <div class="admonition example problem-statement" data-problem-slug="hash-4" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 یک رشته‌ی $S$ به طول $n$ داده شده است. همچنین $q$ کوئری داریم. در هر کوئری یک بازه‌ی $[l, r]$ داده می‌شود و باید مشخص کنید آیا زیررشته‌ی $S[l \dots r]$ پالیندروم است یا نه. الگوریتمی از $O(n + q)$ ارائه دهید.
 </div>
 
 
-<div class="problem-tags problem-tags--topics"><span class="ptag ptag-topic" tabindex="0" role="button" aria-label="نمایش برچسب"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg><span class="ptag-topic__name">hash</span></span></div>
+<div class="problem-tags problem-tags--topics"><span class="ptag ptag-topic" tabindex="0" role="button" data-ui-aria-label="show_tag" aria-label="نمایش برچسب"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg><span class="ptag-topic__name">hash</span></span></div>
 
 
 ## سوال ۱۰ — آقای مهندس و رشته‌‌اش { #problem-hash-9 .problem .problem-optional }
@@ -458,7 +380,7 @@ $$S[l_2 \dots r_2]$$
 
 
 <div class="admonition example problem-statement" data-problem-slug="hash-9" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 یک رشته‌ی $n$ حرفی  $S$ داریم و یک مهره که می‌توان آن را روی هر کاراکتری از این رشته قرار داد.
 
@@ -474,10 +396,10 @@ $$S[l_2 \dots r_2]$$
 </div>
 
 
-<div class="problem-tags problem-tags--topics"><span class="ptag ptag-topic" tabindex="0" role="button" aria-label="نمایش برچسب"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg><span class="ptag-topic__name">hash</span></span></div>
+<div class="problem-tags problem-tags--topics"><span class="ptag ptag-topic" tabindex="0" role="button" data-ui-aria-label="show_tag" aria-label="نمایش برچسب"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg><span class="ptag-topic__name">hash</span></span></div>
 
 
-<details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - محسن زارع</summary>
+<details class="success problem-solution problem-video-solution" markdown="1"><summary><span data-ui-string="solution">پاسخ</span> <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - محسن زارع</summary>
 
 
 <div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-05-q10-solution-video.mp4"></video>
@@ -495,7 +417,7 @@ $$S[l_2 \dots r_2]$$
 
 
 <div class="admonition example problem-statement" data-problem-slug="boyre-moore-2" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 Boyer–Moore در حالت معمول می‌تواند حدوداً با $O(N/M)$ مقایسه کار کند، اما در بدترین حالت ممکن است تا حدود $O(MN)$ مقایسه انجام دهد.
 
@@ -527,7 +449,7 @@ $P = \texttt{ABBBB}$
 </div>
 
 
-<details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - آیه صابری</summary>
+<details class="success problem-solution problem-video-solution" markdown="1"><summary><span data-ui-string="solution">پاسخ</span> <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - آیه صابری</summary>
 
 
 <div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-05-q11-solution-video.mp4"></video>
@@ -544,7 +466,7 @@ $P = \texttt{ABBBB}$
 
 
 <div class="admonition example problem-statement" data-problem-slug="boyre-moore-1" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 یک رشته $T$ به طول $n$ و یک الگو $P$ به طول $m$ داده شده‌اند. می‌خواهیم تمام مکان‌هایی را پیدا کنیم که $P$ در $T$ ظاهر شده است.
 
@@ -558,7 +480,7 @@ $P = \texttt{ABBBB}$
 
 
 <div class="admonition example problem-statement" data-problem-slug="kmp-1" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 یک رشته‌ی $S$ به طول $n$ داده شده است. برای هر $i$، مقدار $\pi_i$ را برابر طول بلندترین پیشوند proper (یعنی خودش نباشه) از $S[1..i]$ می‌گیریم که همزمان پسوند $S[1..i]$ هم باشد.
 
@@ -572,7 +494,7 @@ $P = \texttt{ABBBB}$
 
 
 <div class="admonition example problem-statement" data-problem-slug="kmp-2" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 دو رشته‌ی $S$ و $P$ داده شده‌اند. می‌خواهیم همه‌ی جاهایی را پیدا کنیم که $P$ در $S$ آمده است.
 
@@ -588,7 +510,7 @@ $P = \texttt{ABBBB}$
 
 
 <div class="admonition example problem-statement" data-problem-slug="kmp-3" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 یک رشته‌ی $S$ داده شده است. به رشته‌ی $X$ یک border برای $S$ می‌گوییم اگر $X$ هم پریفیکس proper رشته‌ی $S$ باشد و هم سافیکس آن.
 
@@ -604,7 +526,7 @@ $P = \texttt{ABBBB}$
 
 
 <div class="admonition example problem-statement" data-problem-slug="kmp-4" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 یک رشته‌ی $S$ داده شده است. برای هر پریفیکس $S[1..i]$، تعداد borderهای proper آن را حساب کنید.
 
@@ -620,7 +542,7 @@ $P = \texttt{ABBBB}$
 
 
 <div class="admonition example problem-statement" data-problem-slug="kmp-5" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 یک رشته‌ی $S$ داده شده است. برای هر پریفیکس $S$، حساب کنید چند بار در کل رشته‌ی $S$ آمده است.
 
@@ -630,7 +552,7 @@ $P = \texttt{ABBBB}$
 </div>
 
 
-<details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - متین غیاثی</summary>
+<details class="success problem-solution problem-video-solution" markdown="1"><summary><span data-ui-string="solution">پاسخ</span> <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - متین غیاثی</summary>
 
 
 <div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-05-q17-solution-video.mkv"></video>
@@ -647,7 +569,7 @@ $P = \texttt{ABBBB}$
 
 
 <div class="admonition example problem-statement" data-problem-slug="kmp-6" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 یک رشته‌ی $S$ داده شده است. می‌خواهیم با اضافه کردن چند کاراکتر به ابتدای $S$، آن را به پالیندروم تبدیل کنیم.
 
@@ -665,7 +587,7 @@ $P = \texttt{ABBBB}$
 
 
 <div class="admonition example problem-statement" data-problem-slug="kmp-7" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 یک رشته‌ی $S$ داده شده است. بررسی کنید آیا می‌شود $S$ را از چند بار تکرار یک رشته‌ی کوتاه‌تر ساخت یا نه.
 
@@ -681,7 +603,7 @@ $P = \texttt{ABBBB}$
 
 
 <div class="admonition example problem-statement" data-problem-slug="kmp-8" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 یک رشته‌ی $S$ داده شده است. عدد $p$ را معتبر می‌گوییم اگر برای هر جایگاه $i$ که هر دو جایگاه $i$ و $i+p$ داخل رشته هستند، داشته باشیم $S_i = S_{i+p}$.
 
@@ -691,7 +613,7 @@ $P = \texttt{ABBBB}$
 </div>
 
 
-<details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - فاطمه پرویزی</summary>
+<details class="success problem-solution problem-video-solution" markdown="1"><summary><span data-ui-string="solution">پاسخ</span> <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - فاطمه پرویزی</summary>
 
 
 <div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-05-q20-solution-video.mp4"></video>
@@ -708,7 +630,7 @@ $P = \texttt{ABBBB}$
 
 
 <div class="admonition example problem-statement" data-problem-slug="kmp-9" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 دو رشته‌ی $A$ و $B$ با طول برابر داده شده‌اند. بررسی کنید آیا می‌توان با یک شیفت دوری روی $A$، به رشته‌ی $B$ رسید یا نه.
 
@@ -724,7 +646,7 @@ $P = \texttt{ABBBB}$
 
 
 <div class="admonition example problem-statement" data-problem-slug="kmp-11" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 یک رشته‌ی $P$ و یک عدد $k$ داده شده‌اند. می‌خواهیم کوتاه‌ترین رشته‌ای را بسازیم که شامل $k$ کپی از $P$ باشد.
 
@@ -734,7 +656,7 @@ $P = \texttt{ABBBB}$
 </div>
 
 
-<details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - ثنا نیرومند</summary>
+<details class="success problem-solution problem-video-solution" markdown="1"><summary><span data-ui-string="solution">پاسخ</span> <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - ثنا نیرومند</summary>
 
 
 <div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-05-q22-solution-video.mp4"></video>
@@ -751,7 +673,7 @@ $P = \texttt{ABBBB}$
 
 
 <div class="admonition example problem-statement" data-problem-slug="kmp-12" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 دو رشته‌ی $A$ و $B$ داده شده‌اند. کوتاه‌ترین رشته‌ای را پیدا کنید که هر دو رشته‌ی $A$ و $B$ را به عنوان substring داشته باشد.
 
@@ -767,7 +689,7 @@ $P = \texttt{ABBBB}$
 
 
 <div class="admonition example problem-statement" data-problem-slug="kmp-13" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 تعدادی کاراکتر `0` و تعدادی کاراکتر `1` در اختیار داریم. همچنین یک رشته‌ی هدف $T$ که فقط از `0` و `1` ساخته شده داده شده است.
 
@@ -783,7 +705,7 @@ $P = \texttt{ABBBB}$
 
 
 <div class="admonition example problem-statement" data-problem-slug="kmp-14" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 یک رشته‌ی الگو $P$ و یک الفبا $\Sigma$ داده شده‌اند. برای هر state از $0$ تا $|P|$ و هر کاراکتر $c \in \Sigma$، مشخص کنید اگر در آن state کاراکتر $c$ را بخوانیم، به کدام state می‌رویم.
 
@@ -797,7 +719,7 @@ $P = \texttt{ABBBB}$
 
 
 <div class="admonition example problem-statement" data-problem-slug="kmp-16" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 یک الگو $P$، یک رشته‌ی $B$ و یک عدد بزرگ $k$ داده شده‌اند. رشته‌ی $B^k$ یعنی $B$ را $k$ بار پشت سر هم بنویسیم.
 
@@ -807,7 +729,7 @@ $P = \texttt{ABBBB}$
 </div>
 
 
-<details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - محمد اسماعیلی مرندی</summary>
+<details class="success problem-solution problem-video-solution" markdown="1"><summary><span data-ui-string="solution">پاسخ</span> <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - محمد اسماعیلی مرندی</summary>
 
 
 <div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-05-q26-solution-video.mp4"></video>
@@ -824,7 +746,7 @@ $P = \texttt{ABBBB}$
 
 
 <div class="admonition example problem-statement" data-problem-slug="kmp-17" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 چند رشته‌ی $G_1, G_2, \dots, G_n$ تعریف شده‌اند. هر $G_i$ یا مستقیم یک رشته‌ی معمولی $S_i$ است، یا از چسباندن دو رشته‌ی قبلی ساخته شده است:
 
@@ -842,7 +764,7 @@ $G_i = G_j \cdot G_k$
 
 
 <div class="admonition example problem-statement" data-problem-slug="kmp-18" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 دو الگوی $A$ و $B$ داده شده‌اند. کوتاه‌ترین رشته‌ای را پیدا کنید که شامل $A$ باشد، ولی شامل $B$ نباشد.
 
@@ -858,7 +780,7 @@ $G_i = G_j \cdot G_k$
 
 
 <div class="admonition example problem-statement" data-problem-slug="kmp-19" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 یک الگو $P$، یک عدد $L$، و یک state هدف $q$ از DFA مربوط به KMP داده شده‌اند.
 
@@ -877,7 +799,7 @@ $G_i = G_j \cdot G_k$
 
 
 <div class="admonition example problem-statement" data-problem-slug="hash-8" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 دو رشته‌ی $W$ و $S$ داده شده‌اند. می‌خواهیم تمام زیررشته‌های $S$ با طول $|W|$ را بررسی کنیم و فقط زیررشته‌هایی را درنظر داریم که یک جایگشت از $W$ باشند؛ یعنی دقیقاً همان کاراکترهای $W$ را با همان تعداد تکرار داشته باشند، اما ترتیب کاراکترها می‌تواند متفاوت باشد.
 
@@ -887,7 +809,7 @@ $G_i = G_j \cdot G_k$
 </div>
 
 
-<div class="problem-tags problem-tags--topics"><span class="ptag ptag-topic" tabindex="0" role="button" aria-label="نمایش برچسب"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg><span class="ptag-topic__name">hash</span></span></div>
+<div class="problem-tags problem-tags--topics"><span class="ptag ptag-topic" tabindex="0" role="button" data-ui-aria-label="show_tag" aria-label="نمایش برچسب"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg><span class="ptag-topic__name">hash</span></span></div>
 
 
 ## سوال ۳۱ — Petr { #problem-hash-6 .problem .problem-optional }
@@ -896,7 +818,7 @@ $G_i = G_j \cdot G_k$
 
 
 <div class="admonition example problem-statement" data-problem-slug="hash-6" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 یک رشته‌ی $t$ و دو رشته‌ی $s_{begin}$ و $s_{end}$ داده شده‌اند. می‌خواهیم در $O(N^2.log(N)) $ تعداد زیررشته‌های متمایز از $t$ را بشماریم که با $s_{begin}$ شروع می‌شوند و با $s_{end}$ پایان می‌یابند.
 
@@ -906,10 +828,10 @@ $G_i = G_j \cdot G_k$
 </div>
 
 
-<div class="problem-tags problem-tags--topics"><span class="ptag ptag-topic" tabindex="0" role="button" aria-label="نمایش برچسب"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg><span class="ptag-topic__name">hash</span></span></div>
+<div class="problem-tags problem-tags--topics"><span class="ptag ptag-topic" tabindex="0" role="button" data-ui-aria-label="show_tag" aria-label="نمایش برچسب"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg><span class="ptag-topic__name">hash</span></span></div>
 
 
-<details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - سبحان آرام</summary>
+<details class="success problem-solution problem-video-solution" markdown="1"><summary><span data-ui-string="solution">پاسخ</span> <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - سبحان آرام</summary>
 
 
 <div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-05-q31-solution-video.mp4"></video></div>
@@ -924,16 +846,16 @@ $G_i = G_j \cdot G_k$
 
 
 <div class="admonition example problem-statement" data-problem-slug="hash-5" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 یک ماتریس بزرگ از کاراکترها و یک الگوی دوبعدی کوچک‌تر داده شده است. هدف این است که در بهترین مرتبه‌ زمانی که می‌توانید تمام مکان‌هایی را پیدا کنید که الگو دقیقاً در ماتریس بزرگ ظاهر شده است.
 </div>
 
 
-<div class="problem-tags problem-tags--topics"><span class="ptag ptag-topic" tabindex="0" role="button" aria-label="نمایش برچسب"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg><span class="ptag-topic__name">hash</span></span></div>
+<div class="problem-tags problem-tags--topics"><span class="ptag ptag-topic" tabindex="0" role="button" data-ui-aria-label="show_tag" aria-label="نمایش برچسب"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg><span class="ptag-topic__name">hash</span></span></div>
 
 
-<details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - رسا محمدی</summary>
+<details class="success problem-solution problem-video-solution" markdown="1"><summary><span data-ui-string="solution">پاسخ</span> <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - رسا محمدی</summary>
 
 
 <div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-05-q32-solution-video.mkv"></video></div>
@@ -948,7 +870,7 @@ $G_i = G_j \cdot G_k$
 
 
 <div class="admonition example problem-statement" data-problem-slug="hash-7" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 یک شبکه‌ی اجتماعی شامل $n$ پروفایل داریم که با شماره‌های $1$ تا $n$ مشخص شده‌اند. بعضی از پروفایل‌ها با هم دوست هستند. رابطه‌ی دوستی دوطرفه است؛ یعنی اگر پروفایل $i$ با پروفایل $j$ دوست باشد، پروفایل $j$ نیز با پروفایل $i$ دوست است.
 
@@ -963,10 +885,10 @@ $G_i = G_j \cdot G_k$
 </div>
 
 
-<div class="problem-tags problem-tags--topics"><span class="ptag ptag-topic" tabindex="0" role="button" aria-label="نمایش برچسب"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg><span class="ptag-topic__name">hash</span></span></div>
+<div class="problem-tags problem-tags--topics"><span class="ptag ptag-topic" tabindex="0" role="button" data-ui-aria-label="show_tag" aria-label="نمایش برچسب"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg><span class="ptag-topic__name">hash</span></span></div>
 
 
-<details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - سپهر علیپور</summary>
+<details class="success problem-solution problem-video-solution" markdown="1"><summary><span data-ui-string="solution">پاسخ</span> <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - سپهر علیپور</summary>
 
 
 <div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-05-q33-solution-video.mp4"></video></div>
@@ -981,7 +903,7 @@ $G_i = G_j \cdot G_k$
 
 
 <div class="admonition example problem-statement" data-problem-slug="kmp-24" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 پتیا در جریان مطالعه‌ی مریخی‌ها به‌خوبی فهمید که آن‌ها بسیار تنبل هستند. آن‌ها خوابیدن را دوست دارند و از بیدار شدن خوششان نمی‌آید.
 
@@ -1015,7 +937,7 @@ $c \le i \le d$
 
 
 <div class="admonition example problem-statement" data-problem-slug="kmp-23" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 خرس‌های قطبی Menshykov و Uslada از باغ‌وحش سن‌پترزبورگ و فیل Horace از باغ‌وحش کی‌یف، تعداد زیادی مکعب چوبی پیدا کردند. آن‌ها شروع کردند به ساختن برج‌های مکعبی، به این صورت که مکعب‌ها را روی هم قرار می‌دادند. چند برج که در یک ردیف کنار هم قرار گرفته باشند، یک دیوار را تشکیل می‌دهند. یک دیوار می‌تواند شامل برج‌هایی با ارتفاع‌های مختلف باشد.
 
@@ -1037,7 +959,7 @@ Horace زودتر از بقیه ساخت دیوار خود را تمام کرد 
 
 
 <div class="admonition example problem-statement" data-problem-slug="kmp-10" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 دو آرایه‌ی عددی $A$ و $B$ داده شده‌اند. می‌خواهیم همه‌ی جاهایی را پیدا کنیم که $B$ با همان شکل کلی داخل $A$ آمده است؛ یعنی اگر همه‌ی اعضای $B$ به اندازه‌ی یک مقدار ثابت بالا یا پایین بروند، هنوز همان حالت حساب شود.
 
@@ -1047,7 +969,7 @@ Horace زودتر از بقیه ساخت دیوار خود را تمام کرد 
 </div>
 
 
-<details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - محمد محمودیه</summary>
+<details class="success problem-solution problem-video-solution" markdown="1"><summary><span data-ui-string="solution">پاسخ</span> <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - محمد محمودیه</summary>
 
 
 <div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-05-q36-solution-video.mp4"></video>
@@ -1064,7 +986,7 @@ Horace زودتر از بقیه ساخت دیوار خود را تمام کرد 
 
 
 <div class="admonition example problem-statement" data-problem-slug="kmp-15" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 دو رشته‌ی $S$ و $T$ داده شده‌اند. بررسی کنید آیا می‌توان $T$ را به دو بخش $A$ و $B$ شکست، طوری که $T = AB$ و رشته‌ی $S$ به شکل زیر باشد:
 
@@ -1076,7 +998,7 @@ $*A*B*$
 </div>
 
 
-<details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - مهدیار مستشار</summary>
+<details class="success problem-solution problem-video-solution" markdown="1"><summary><span data-ui-string="solution">پاسخ</span> <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - مهدیار مستشار</summary>
 
 
 <div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-05-q37-solution-video.mp4"></video></div>
@@ -1091,7 +1013,7 @@ $*A*B*$
 
 
 <div class="admonition example problem-statement" data-problem-slug="kmp-20" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 یک الگوی ممنوع $P$، یک عدد $n$، و یک الفبا $\Sigma$ داده شده‌اند.
 
@@ -1101,7 +1023,7 @@ $*A*B*$
 </div>
 
 
-<details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - سیده شقایق میرجلیلی</summary>
+<details class="success problem-solution problem-video-solution" markdown="1"><summary><span data-ui-string="solution">پاسخ</span> <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - سیده شقایق میرجلیلی</summary>
 
 
 <div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-05-q38-solution-video.mov"></video></div>
@@ -1116,7 +1038,7 @@ $*A*B*$
 
 
 <div class="admonition example problem-statement" data-problem-slug="kmp-21" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 یک رشته‌ی $S$ داده شده که بعضی از کاراکترهای آن `?` هستند. همچنین یک الگو $P$ داده شده است.
 
@@ -1126,7 +1048,7 @@ $*A*B*$
 </div>
 
 
-<details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - شایان سبزی</summary>
+<details class="success problem-solution problem-video-solution" markdown="1"><summary><span data-ui-string="solution">پاسخ</span> <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - شایان سبزی</summary>
 
 
 <div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-05-q39-solution-video.mp4"></video></div>
@@ -1141,7 +1063,7 @@ $*A*B*$
 
 
 <div class="admonition example problem-statement" data-problem-slug="kmp-22" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 دو رشته‌ی $A$ و $B$ و یک الگوی ممنوع $P$ داده شده‌اند.
 
@@ -1151,7 +1073,7 @@ $*A*B*$
 </div>
 
 
-<details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - سبحان بهزادی‌پور</summary>
+<details class="success problem-solution problem-video-solution" markdown="1"><summary><span data-ui-string="solution">پاسخ</span> <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - سبحان بهزادی‌پور</summary>
 
 
 <div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-05-q40-solution-video.mp4"></video></div>

@@ -2,6 +2,33 @@
 .md-typeset h2.problem,
 .md-typeset h3.problem { scroll-margin-top: 5rem; }
 
+/* ── Assignment problem filter ──────────────────────────────── */
+.assignment-problem-filter {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .45rem;
+  margin: 1rem 0 1.25rem;
+  color: var(--md-default-fg-color--light);
+  font-size: .9rem;
+}
+
+.assignment-problem-filter button {
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 999px;
+  padding: .25rem .7rem;
+  background: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
+  cursor: pointer;
+  font: inherit;
+}
+
+.assignment-problem-filter button[aria-pressed="true"] {
+  border-color: var(--md-primary-fg-color);
+  background: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color);
+}
+
 /* ── Type-tag badges (icon-only, square) ────────────────────────── */
 .problem-tags {
   display: inline-flex;
@@ -186,4 +213,3 @@ hr.problem-break {
   border-top: 2px dashed var(--md-default-fg-color--lightest, #e3e3e7);
   margin: 1.6rem 0;
 }
-

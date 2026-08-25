@@ -1,88 +1,10 @@
+---
+assignment: true
+---
+
 # تمرین ۳
 
-
-
-
-<div class="assignment-problem-filter" data-assignment-problem-filter markdown="0">
-  <span>نمایش:</span>
-  <button type="button" data-filter-mode="all" aria-pressed="true">همه سوال‌ها</button>
-  <button type="button" data-filter-mode="deliverable" aria-pressed="false">سوالات تحویلی</button>
-</div>
-<style>
-.assignment-problem-filter {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: .45rem;
-  margin: 1rem 0 1.25rem;
-  color: var(--md-default-fg-color--light);
-  font-size: .9rem;
-}
-.assignment-problem-filter button {
-  border: 1px solid var(--md-default-fg-color--lightest);
-  border-radius: 999px;
-  padding: .25rem .7rem;
-  background: var(--md-default-bg-color);
-  color: var(--md-default-fg-color);
-  cursor: pointer;
-  font: inherit;
-}
-.assignment-problem-filter button[aria-pressed="true"] {
-  border-color: var(--md-primary-fg-color);
-  background: var(--md-primary-fg-color);
-  color: var(--md-primary-bg-color);
-}
-</style>
-<script>
-(function () {
-  const scriptEl = document.currentScript;
-
-  function init() {
-    const root = (scriptEl && scriptEl.closest(".md-content")) || document;
-    const controls = root.querySelector("[data-assignment-problem-filter]");
-    if (!controls || controls.dataset.bound) return;
-    controls.dataset.bound = "1";
-    const problems = Array.from(root.querySelectorAll("h2.problem"));
-
-    function setProblemVisible(heading, visible) {
-      heading.style.display = visible ? "" : "none";
-      const prev = heading.previousElementSibling;
-      if (prev && prev.matches("hr.problem-break")) {
-        prev.style.display = visible ? "" : "none";
-      }
-      let el = heading.nextElementSibling;
-      while (el && !el.matches("h2")) {
-        el.style.display = visible ? "" : "none";
-        el = el.nextElementSibling;
-      }
-    }
-
-    function apply(mode) {
-      controls.querySelectorAll("[data-filter-mode]").forEach((btn) => {
-        btn.setAttribute("aria-pressed", btn.dataset.filterMode === mode ? "true" : "false");
-      });
-      problems.forEach((heading) => {
-        setProblemVisible(
-          heading,
-          mode !== "deliverable" || heading.classList.contains("problem-deliverable")
-        );
-      });
-    }
-
-    controls.addEventListener("click", (ev) => {
-      const btn = ev.target.closest("[data-filter-mode]");
-      if (!btn) return;
-      apply(btn.dataset.filterMode || "all");
-    });
-  }
-
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", init, { once: true });
-  } else {
-    init();
-  }
-})();
-</script>
+<div data-assignment-problem-filter></div>
 
 
 ## مقدماتی
@@ -94,7 +16,7 @@
 
 
 <div class="admonition example problem-statement" data-problem-slug="assignment-hw03-01" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 همانطور که می‌دانید، دو روش محبوب برای ذخیره‌ی گراف عبارت‌اند از لیست مجاورت و ماتریس مجاورت.
 
@@ -112,7 +34,7 @@
 
 
 <div class="admonition example problem-statement" data-problem-slug="graph-amshz-8" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 یک درخت با $n$ رأس داده شده است.
 
@@ -139,7 +61,7 @@
 </details>
 
 
-<details class="success problem-solution" markdown="1"><summary>پاسخ</summary>
+<details class="success problem-solution" markdown="1"><summary><span data-ui-string="solution">پاسخ</span></summary>
 
 درخت را ریشه‌دار می‌کنیم.
 
@@ -171,7 +93,7 @@ $\min(dp_0[1], dp_1[1])$
 
 
 <div class="admonition example problem-statement" data-problem-slug="graph-amshz-9" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 یک درخت با $n$ رأس داده شده است.
 
@@ -206,7 +128,7 @@ $\min(dp_0[1], dp_1[1])$
 
 
 <div class="admonition example problem-statement" data-problem-slug="graph-amshz-12" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 یک گراف با $n$ رأس داده شده است.
 
@@ -218,13 +140,13 @@ $\min(dp_0[1], dp_1[1])$
 
 <details class="tip problem-hints" markdown="1"><summary>راهنمایی‌ها</summary>
 
-درخت همبند و بدون دور است. اگر رنگ یک رأس را ثابت کنید، رنگ بقیه‌ی رأس‌ها دیگر اجباری می‌شود. 
+در یک درخت، و به‌طور کلی‌تر در هر مؤلفهٔ همبند دوبخشی، با ثابت کردن رنگ یک رأس، رنگ بقیهٔ رأس‌های آن مؤلفه اجباری می‌شود.
 
 <details class="tip hint hint-tip" markdown="1"><summary>راهنمایی</summary>
 
-درخت همیشه دوبخشی است.
+هر درخت دوبخشی است؛ اما برای یک گراف دلخواه، ابتدا باید دوبخشی بودن هر مؤلفهٔ همبند را بررسی کنید.
 
-با انتخاب رنگ رأس $1$، رنگ تمام رأس‌ها بر اساس زوج یا فرد بودن فاصله‌شان از رأس $1$ تعیین می‌شود.
+با انتخاب رنگ یک رأس شروع، رنگ تمام رأس‌های قابل‌دسترسی بر اساس زوج یا فرد بودن فاصله‌شان از آن رأس تعیین می‌شود. هر مؤلفهٔ همبند دوبخشی دو انتخاب برای رنگ رأس شروع دارد؛ اگر حتی یک مؤلفه دوبخشی نباشد، پاسخ صفر است.
 
 </details>
 
@@ -239,7 +161,7 @@ $\min(dp_0[1], dp_1[1])$
 
 
 <div class="admonition example problem-statement" data-problem-slug="archive-graph-bfs-01" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 قطر یک درخت $T = (V,E)$ به صورت $max\{\delta (u,v): u,v \in V\}$ تعریف شده است که به این معناست که بین همه کوتاه‌ترین مسیرها در درخت از همه بزرگ‌تر است. الگوریتمی با زمان اجرای $O(n)$ برای محاسبه قطر درخت ارائه دهید و زمان اجرای آن را تحلیل کنید.
 </div>
@@ -251,7 +173,7 @@ $\min(dp_0[1], dp_1[1])$
 
 
 <div class="admonition example problem-statement" data-problem-slug="bfs-zero-one" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 یک گراف به صورت $G=(V,E)$ داده شده است که وزن هر یال فقط یکی از دو مقدار ۰ یا ۱ است، یعنی $w(e) \in \{0,1\}$.
 همچنین یک رأس مبدأ $s \in V$ داده شده است.
@@ -266,7 +188,7 @@ $\min(dp_0[1], dp_1[1])$
 
 
 <div class="admonition example problem-statement" data-problem-slug="assignment-run-shortest-path-algorithms" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 در این سؤال می‌خواهیم اجرای دو الگوریتم معروف کوتاه‌ترین مسیر را بررسی کنیم.
 
@@ -373,7 +295,7 @@ $\min(dp_0[1], dp_1[1])$
 </div>
 
 
-<div class="problem-tags problem-tags--topics"><span class="ptag ptag-topic" tabindex="0" role="button" aria-label="نمایش برچسب"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg><span class="ptag-topic__name">کوتاه‌ترین مسیر</span></span><span class="ptag ptag-topic" tabindex="0" role="button" aria-label="نمایش برچسب"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg><span class="ptag-topic__name">گراف</span></span></div>
+<div class="problem-tags problem-tags--topics"><span class="ptag ptag-topic" tabindex="0" role="button" data-ui-aria-label="show_tag" aria-label="نمایش برچسب"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg><span class="ptag-topic__name">کوتاه‌ترین مسیر</span></span><span class="ptag ptag-topic" tabindex="0" role="button" data-ui-aria-label="show_tag" aria-label="نمایش برچسب"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg><span class="ptag-topic__name">گراف</span></span></div>
 
 
 ## سوال ۸ — دورترین فاصله برای هر رأس درخت { #problem-graph-amshz-11 .problem .problem-optional }
@@ -382,7 +304,7 @@ $\min(dp_0[1], dp_1[1])$
 
 
 <div class="admonition example problem-statement" data-problem-slug="graph-amshz-11" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 یک درخت با $n$ رأس داده شده است.
 
@@ -392,7 +314,7 @@ $\min(dp_0[1], dp_1[1])$
 </div>
 
 
-<details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - سیده شقایق میرجلیلی</summary>
+<details class="success problem-solution problem-video-solution" markdown="1"><summary><span data-ui-string="solution">پاسخ</span> <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - سیده شقایق میرجلیلی</summary>
 
 
 <div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-03-q08-solution-video.mov"></video></div>
@@ -407,7 +329,7 @@ $\min(dp_0[1], dp_1[1])$
 
 
 <div class="admonition example problem-statement" data-problem-slug="bfs-multi-source" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 شبکه را گرافی مانند $G=(V, E)$ در نظر بگیرید. هر گره $v \in V$ یا یک سرویس‌دهنده (Provider) است یا یک کاربر (Client). برای هر سرویس‌دهنده $i$، یک بردِ مجاز $r_i$ تعریف شده است. کاربر $j$ تنها در صورتی می‌تواند از سرویس $i$ استفاده کند که $dist(i, j) \le r_i$ باشد.
 
@@ -421,7 +343,7 @@ $\min(dp_0[1], dp_1[1])$
 
 
 <div class="admonition example problem-statement" data-problem-slug="edge-on-shortest-path" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 یک گراف جهت‌دار وزن‌دار با $n$ رأس و $m$ یال داده شده است. وزن همه‌ی یال‌ها نامنفی است.
 
@@ -431,7 +353,7 @@ $\min(dp_0[1], dp_1[1])$
 </div>
 
 
-<div class="problem-tags problem-tags--topics"><span class="ptag ptag-topic" tabindex="0" role="button" aria-label="نمایش برچسب"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg><span class="ptag-topic__name">کوتاه‌ترین مسیر</span></span><span class="ptag ptag-topic" tabindex="0" role="button" aria-label="نمایش برچسب"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg><span class="ptag-topic__name">گراف</span></span></div>
+<div class="problem-tags problem-tags--topics"><span class="ptag ptag-topic" tabindex="0" role="button" data-ui-aria-label="show_tag" aria-label="نمایش برچسب"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg><span class="ptag-topic__name">کوتاه‌ترین مسیر</span></span><span class="ptag ptag-topic" tabindex="0" role="button" data-ui-aria-label="show_tag" aria-label="نمایش برچسب"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg><span class="ptag-topic__name">گراف</span></span></div>
 
 
 <details class="tip problem-hints" markdown="1"><summary>راهنمایی‌ها</summary>
@@ -497,7 +419,7 @@ $dist_1[u] + w + dist_n[v] = dist_1[n]$
 
 
 <div class="admonition example problem-statement" data-problem-slug="archive-graph-dijsktra-07" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 گراف بدون جهت و وزن ‌داری با $n$ راس و $m$ یال ورودی داده شده است. الگوریتمی با پیچیدگی زمانی مرتبه‌ی $O((n+m)\log(n+m))$ ارائه دهید که تعداد کوتاه‌ترین مسیر‌های متمایز از راس $s$ به راس $t$ را پیدا کند.
 </div>
@@ -509,7 +431,7 @@ $dist_1[u] + w + dist_n[v] = dist_1[n]$
 
 
 <div class="admonition example problem-statement" data-problem-slug="assignement-hw03-05" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 یک گراف $G=(V,E)$ داریم که یال‌های آن جهت‌دار هستند. 
 
@@ -527,7 +449,7 @@ $dist_1[u] + w + dist_n[v] = dist_1[n]$
 
 
 <div class="admonition example problem-statement" data-problem-slug="graph-amshz-2" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 یک گراف بدون‌جهت همبند با $n$ رأس و $m$ یال داده شده است.
 
@@ -545,7 +467,7 @@ $dist_1[u] + w + dist_n[v] = dist_1[n]$
 
 
 <div class="admonition example problem-statement" data-problem-slug="graph-helena-04" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 الگوریتمی ارائه دهید که تعیین کند آیا یک گراف بدون‌جهت داده‌شدهٔ $G=(V, E)$ دارای دور هست یا خیر. الگوریتم شما باید در زمان $O(V)$ و مستقل از $|E|$ اجرا شود.
 </div>
@@ -557,7 +479,7 @@ $dist_1[u] + w + dist_n[v] = dist_1[n]$
 
 
 <div class="admonition example problem-statement" data-problem-slug="graph-amshz-3" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 یک درخت با $n$ رأس داریم که ریشه‌ی آن رأس $1$ است.
 
@@ -602,7 +524,7 @@ $dist_1[u] + w + dist_n[v] = dist_1[n]$
 </details>
 
 
-<details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - محمد اسماعیلی مرندی</summary>
+<details class="success problem-solution problem-video-solution" markdown="1"><summary><span data-ui-string="solution">پاسخ</span> <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - محمد اسماعیلی مرندی</summary>
 
 
 <div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-03-q15-solution-video.mp4"></video></div>
@@ -617,7 +539,7 @@ $dist_1[u] + w + dist_n[v] = dist_1[n]$
 
 
 <div class="admonition example problem-statement" data-problem-slug="bitflip" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 یک صفحه‌ی $n \times m$ از لامپ‌ها داریم. هر لامپ یا خاموش است یا روشن.
 
@@ -632,7 +554,7 @@ $dist_1[u] + w + dist_n[v] = dist_1[n]$
 </div>
 
 
-<details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - علی مقدسی</summary>
+<details class="success problem-solution problem-video-solution" markdown="1"><summary><span data-ui-string="solution">پاسخ</span> <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - علی مقدسی</summary>
 
 
 <div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-03-q16-solution-video.mp4"></video>
@@ -649,7 +571,7 @@ $dist_1[u] + w + dist_n[v] = dist_1[n]$
 
 
 <div class="admonition example problem-statement" data-problem-slug="ice-skating" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 زمین اسکیت روی یخ به شکل یک جدول $m \times m$ است و روی بعضی از خانه‌های آن، سنگ قرار دارد.  
 در ابتدا $n$ سنگ داریم و سنگ $i$ام در خانه‌ی $(x_i, y_i)$ قرار گرفته است.
@@ -664,7 +586,7 @@ $dist_1[u] + w + dist_n[v] = dist_1[n]$
 </div>
 
 
-<details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - کیاشا کوشانفر</summary>
+<details class="success problem-solution problem-video-solution" markdown="1"><summary><span data-ui-string="solution">پاسخ</span> <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - کیاشا کوشانفر</summary>
 
 
 <div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-03-q17-solution-video.mp4"></video></div>
@@ -679,7 +601,7 @@ $dist_1[u] + w + dist_n[v] = dist_1[n]$
 
 
 <div class="admonition example problem-statement" data-problem-slug="shortes-path-parity" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 گراف وزن‌دار با $n$ رأس و $m$ یال داده می‌شود. دو رأس $u$ و $v$ داده می‌شود. کمترین فاصله‌ی مسیری از $u$ به $v$ که تعداد یال‌هایش زوج باشد و کمترین فاصله‌ای که تعداد یال‌هایش فرد باشد را بیابید. اگر چنین مسیری وجود نداشت، $-1$ برگردانید.
 
@@ -693,7 +615,7 @@ $dist_1[u] + w + dist_n[v] = dist_1[n]$
 
 
 <div class="admonition example problem-statement" data-problem-slug="exponential-edges" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 یک گراف $G=(V,E)$ داریم که یال‌های آن وزن دارند. اما یک تفاوت این گراف با گراف‌های معمولی این است که اگر از یک رأس شروع به پیمایش کنیم، وزن یال‌های پیموده نشده در هر گام دو‌برابر می‌شود. 
 
@@ -715,7 +637,7 @@ $$
 
 
 <div class="admonition example problem-statement" data-problem-slug="archive-graph-bellman-floyd-05" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 فرض کنید نرخ تبدیل $n$‌ ارز موجود به یکدیگر را می‌دانیم. $m$  ریال پول در اختیار داریم. می‌خواهیم بدانیم با چندین بار تبدیل پول و نهایتا تبدیل آن به ریال می‌توانیم مقدار $m$ را افزایش دهیم. الگوریتمی با زمان اجرای چندجمله‌ای برای تشخیص چنین کاری ارائه دهید.
 </div>
@@ -727,7 +649,7 @@ $$
 
 
 <div class="admonition example problem-statement" data-problem-slug="archive-graph-dfs-16" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 فرض کنید یک گراف ۵ راسی همبند داریم که راس‌های آن با شماره‌های ۱ تا ۵ شماره‌گذاری شده‌اند. فرض کنید از راس ۱  DFS را اجرا می‌کنیم. فرض کنید تمام حالت‌هایی که DFS‌ می‌تواند رئوس را ملاقات کند عبارتند از $<1, 2, 4 , 3 , 5>$، $<1, 3, 4, 2 , 5>$ و $<1 , 3, 5, 4, 2>$. حال اگر از راس $5$  DFS را اجرا کنیم ترتیب ملاقات‌ها به چه شکل می‌تواند باشد. دلیل خود را بیان کنید.
 </div>
@@ -739,7 +661,7 @@ $$
 
 
 <div class="admonition example problem-statement" data-problem-slug="bazsazi" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 یک رشته‌ی ناشناخته داشته‌ایم و تمام زیررشته‌های متوالیِ طول $2$ آن را جدا کرده‌ایم.
 
@@ -755,7 +677,7 @@ $$
 </div>
 
 
-<details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - علیرضا مهندسی</summary>
+<details class="success problem-solution problem-video-solution" markdown="1"><summary><span data-ui-string="solution">پاسخ</span> <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - علیرضا مهندسی</summary>
 
 
 <div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-03-q22-solution-video.mp4"></video></div>
@@ -770,7 +692,7 @@ $$
 
 
 <div class="admonition example problem-statement" data-problem-slug="new-graph-scc-01" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 گراف جهت‌دار $G = (V, E)$ داده شده است. یک مؤلفه‌ی قویاً همبند، زیرمجموعه‌ای ماکزیمال از رئوس است که برای هر جفت رأس آن، در هر دو جهت مسیر وجود داشته باشد.
 
@@ -784,7 +706,7 @@ $$
 
 
 <div class="admonition example problem-statement" data-problem-slug="graph-amshz-5" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 یک گراف جهت‌دار با $n$ رأس و $m$ یال داده شده است.
 
@@ -794,7 +716,7 @@ $$
 </div>
 
 
-<details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - Soroush Davaran</summary>
+<details class="success problem-solution problem-video-solution" markdown="1"><summary><span data-ui-string="solution">پاسخ</span> <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - Soroush Davaran</summary>
 
 
 <div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-03-q24-solution-video.mp4"></video></div>
@@ -809,7 +731,7 @@ $$
 
 
 <div class="admonition example problem-statement" data-problem-slug="graph-amshz-1" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 یک گراف بدون‌جهت با $n$ رأس و $m$ یال داریم. دزد در ابتدا در رأس $1$ قرار دارد و چند پلیس نیز در رأس‌های داده‌شده قرار دارند.
 
@@ -854,7 +776,7 @@ $t < police[v]$
 </details>
 
 
-<details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - شمیم رحیمی</summary>
+<details class="success problem-solution problem-video-solution" markdown="1"><summary><span data-ui-string="solution">پاسخ</span> <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - شمیم رحیمی</summary>
 
 
 <div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-03-q25-solution-video.mov"></video></div>
@@ -869,7 +791,7 @@ $t < police[v]$
 
 
 <div class="admonition example problem-statement" data-problem-slug="graph-minecraft" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 پوریا، سهیل و علیرضا داخل یک مپ ماینکرفت زندگی می‌کنند.  
 مپ به صورت یک جدول $n \times n$ است و بعضی از خانه‌های آن قابل عبور نیستند.
@@ -885,7 +807,7 @@ $t < police[v]$
 </div>
 
 
-<details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - سید حسن خاتمی بیدگلی</summary>
+<details class="success problem-solution problem-video-solution" markdown="1"><summary><span data-ui-string="solution">پاسخ</span> <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - سید حسن خاتمی بیدگلی</summary>
 
 
 <div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-03-q26-solution-video.mp4"></video></div>
@@ -903,7 +825,7 @@ $t < police[v]$
 
 
 <div class="admonition example problem-statement" data-problem-slug="floyd-remove-edges" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 سال ۲۰۳۱. یک ویروس ناشناخته با سرعت نگران‌کننده‌ای در حال گسترش است. دولت تصمیم گرفته به عنوان آخرین راه‌حل، شهرهای آلوده را یکی یکی قرنطینه‌ی کامل کند — به این معنا که تمام جاده‌های ورودی و خروجی آن شهر برای همیشه بسته می‌شوند و آن شهر از شبکه‌ی حمل‌ونقل کشور حذف می‌گردد.
 
@@ -930,7 +852,7 @@ $t < police[v]$
 
 
 <div class="admonition example problem-statement" data-problem-slug="new-graph-scc-02" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 در مسئله‌ی $\text{2-SAT}$، یک فرمول منطقی شامل تعدادی متغیر بولی به شما داده می‌شود. این فرمول در حالت استاندارد $\text{2-CNF}$ قرار دارد؛ به این معنا که از عطف (AND) تعدادی عبارت (Clause) تشکیل شده و در هر عبارت، دقیقاً فصل (OR) دو لیترال (خود متغیر یا نقیض آن) وجود دارد.
 
@@ -964,7 +886,7 @@ $$
 
 
 <div class="admonition example problem-statement" data-problem-slug="new-graph-scc-03" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 گراف بدون‌جهتی به‌صورت $G=(V,E)$ داده شده است که هر یال آن دارای یک رنگ است.
 
@@ -980,7 +902,7 @@ $$
 </div>
 
 
-<div class="problem-tags problem-tags--topics"><span class="ptag ptag-topic" tabindex="0" role="button" aria-label="نمایش برچسب"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg><span class="ptag-topic__name">2-sat</span></span><span class="ptag ptag-topic" tabindex="0" role="button" aria-label="نمایش برچسب"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg><span class="ptag-topic__name">scc</span></span></div>
+<div class="problem-tags problem-tags--topics"><span class="ptag ptag-topic" tabindex="0" role="button" data-ui-aria-label="show_tag" aria-label="نمایش برچسب"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg><span class="ptag-topic__name">2-sat</span></span><span class="ptag ptag-topic" tabindex="0" role="button" data-ui-aria-label="show_tag" aria-label="نمایش برچسب"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg><span class="ptag-topic__name">scc</span></span></div>
 
 
 <details class="tip problem-hints" markdown="1"><summary>راهنمایی‌ها</summary>
@@ -1022,7 +944,7 @@ $$
 </details>
 
 
-<details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - میلاد رستمی</summary>
+<details class="success problem-solution problem-video-solution" markdown="1"><summary><span data-ui-string="solution">پاسخ</span> <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - میلاد رستمی</summary>
 
 
 <div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-03-q29-solution-video.mp4"></video></div>
@@ -1037,7 +959,7 @@ $$
 
 
 <div class="admonition example problem-statement" data-problem-slug="graph-helena-03" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 فرض کنید می‌خواهیم الگوریتم دایجسترا را روی گرافی اجرا کنیم که وزن یال‌های آن اعداد صحیح در بازهٔ $\{0, 1, \dots, W\}$ هستند، که در آن $W$ عدد نسبتاً کوچکی است.
 
@@ -1049,7 +971,7 @@ $$
 </div>
 
 
-<details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - حسنا شاه حیدری</summary>
+<details class="success problem-solution problem-video-solution" markdown="1"><summary><span data-ui-string="solution">پاسخ</span> <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - حسنا شاه حیدری</summary>
 
 
 <div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-03-q30-solution-video.mp4"></video>
@@ -1066,7 +988,7 @@ $$
 
 
 <div class="admonition example problem-statement" data-problem-slug="edge-reverse" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 یک گراف جهت‌دار با $n$ رأس و $m$ یال داریم. یال $i$ام از رأس $u_i$ به رأس $v_i$ می‌رود و هزینه‌ی برعکس کردن آن برابر $w_i$ است.
 
@@ -1078,7 +1000,7 @@ $$
 </div>
 
 
-<details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - سید محمد مهدی حسینی</summary>
+<details class="success problem-solution problem-video-solution" markdown="1"><summary><span data-ui-string="solution">پاسخ</span> <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - سید محمد مهدی حسینی</summary>
 
 
 <div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-03-q31-solution-video.mp4"></video></div>
@@ -1093,13 +1015,13 @@ $$
 
 
 <div class="admonition example problem-statement" data-problem-slug="archive-graph-dijsktra-10" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 فرض کنید یک گراف بدون‌جهت داریم که هر یال آن دارای دو وزن مثبت است. بار اولی که از یک یال عبور می‌کنیم باید به اندازه وزن بیش‌تر آن یال هزینه پرداخت کنیم و بارهای بعدی به اندازه وزن سبک‌تر هزینه پرداخت می‌کنیم.  می‌خواهیم از  راس $u$ به راس $v$ برویم و در مسیر از راس $w$ عبور کنیم. الگوریتمی از مرتبه $O(n\log n+m)$ ارائه دهید که مسیر با کم‌ترین وزن را پیدا کند که $n$ و $m$ به ترتیب تعداد رئوس و تعداد یال‌های گراف می‌باشند.
 </div>
 
 
-<details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - رادین بهارصفت</summary>
+<details class="success problem-solution problem-video-solution" markdown="1"><summary><span data-ui-string="solution">پاسخ</span> <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - رادین بهارصفت</summary>
 
 
 <div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-03-q32-solution-video.mp4"></video></div>
@@ -1114,7 +1036,7 @@ $$
 
 
 <div class="admonition example problem-statement" data-problem-slug="new-graph-dijkstra-04" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 گوئائولد آپوفیس دوباره تیم جک اونیل را دستگیر کرده است! خود جک توانست فرار کند، اما تا آن زمان سفینه آپوفیس به فضای ابرپرش رفته بود. اما جک می‌داند آپوفیس در کدام سیاره فرود خواهد آمد. برای نجات دوستانش، جک باید مکرراً از طریق دروازه‌های ستاره‌ای (stargates) به این سیاره برود.
 
@@ -1129,7 +1051,7 @@ $$
 </div>
 
 
-<div class="problem-tags problem-tags--topics"><span class="ptag ptag-topic" tabindex="0" role="button" aria-label="نمایش برچسب"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg><span class="ptag-topic__name">کوتاه‌ترین مسیر</span></span><span class="ptag ptag-topic" tabindex="0" role="button" aria-label="نمایش برچسب"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg><span class="ptag-topic__name">گراف</span></span></div>
+<div class="problem-tags problem-tags--topics"><span class="ptag ptag-topic" tabindex="0" role="button" data-ui-aria-label="show_tag" aria-label="نمایش برچسب"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg><span class="ptag-topic__name">کوتاه‌ترین مسیر</span></span><span class="ptag ptag-topic" tabindex="0" role="button" data-ui-aria-label="show_tag" aria-label="نمایش برچسب"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg><span class="ptag-topic__name">گراف</span></span></div>
 
 
 ## سوال ۳۴ — بازی لحظه‌آخری { #problem-last-minute .problem .problem-optional }
@@ -1138,13 +1060,13 @@ $$
 
 
 <div class="admonition example problem-statement" data-problem-slug="last-minute" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 گراف جهت‌دار $n$ رأسی و $m$ یالی داریم که مهره‌ای روی رأس شماره $1$ آن قرار دارد. آلیس و باب به نوبت بازی می‌کنند. در هر نوبت، بازیکن باید مهره را از رأس فعلی $v$ به یکی از رئوس همسایه خروجی آن منتقل کند. بازیکنی که در نوبت خود نتواند حرکتی انجام دهد (یعنی مهره در رأسی بدون یال خروجی قرار گرفته باشد)، بازنده است. اگر هر دو بازیکن بتوانند با بازیِ بهینه، مانع از پایان بازی شوند (بازی تا بی‌نهایت ادامه یابد)، نتیجه مساوی است. الگوریتمی با پیچیدگی $\mathcal{O}(n+m)$ ارائه دهید که برنده بازی را مشخص کند.
 </div>
 
 
-<details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - محمد‌حسین شیرازی</summary>
+<details class="success problem-solution problem-video-solution" markdown="1"><summary><span data-ui-string="solution">پاسخ</span> <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - محمد‌حسین شیرازی</summary>
 
 
 <div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-03-q34-solution-video.mp4"></video></div>
@@ -1159,7 +1081,7 @@ $$
 
 
 <div class="admonition example problem-statement" data-problem-slug="new-graph-sp-01" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 پتیا والیبال را خیلی دوست دارد. یک روز او برای یک مسابقه والیبال دیر کرده بود. پتیا ماشین شخصی نخریده است، به همین دلیل مجبور شد تاکسی بگیرد. شهر دارای $n$ تقاطع است که برخی از آن‌ها توسط جاده‌های دوطرفه به هم متصل شده‌اند. طول هر جاده با یک عدد صحیح مثبت بر حسب متر مشخص می‌شود؛ جاده‌ها می‌توانند طول‌های متفاوتی داشته باشند.
 
@@ -1169,7 +1091,7 @@ $$
 </div>
 
 
-<div class="problem-tags problem-tags--topics"><span class="ptag ptag-topic" tabindex="0" role="button" aria-label="نمایش برچسب"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg><span class="ptag-topic__name">کوتاه‌ترین مسیر</span></span><span class="ptag ptag-topic" tabindex="0" role="button" aria-label="نمایش برچسب"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg><span class="ptag-topic__name">گراف</span></span></div>
+<div class="problem-tags problem-tags--topics"><span class="ptag ptag-topic" tabindex="0" role="button" data-ui-aria-label="show_tag" aria-label="نمایش برچسب"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg><span class="ptag-topic__name">کوتاه‌ترین مسیر</span></span><span class="ptag ptag-topic" tabindex="0" role="button" data-ui-aria-label="show_tag" aria-label="نمایش برچسب"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg><span class="ptag-topic__name">گراف</span></span></div>
 
 
 ## سوال ۳۶ — پرچم فرانسه { #problem-graph-helena-01 .problem .problem-optional }
@@ -1178,7 +1100,7 @@ $$
 
 
 <div class="admonition example problem-statement" data-problem-slug="graph-helena-01" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 گراف جهت‌داری مانند $G$ را در نظر بگیرید که هر یال آن به رنگ قرمز، سفید یا آبی درآمده است. یک «پیمایش» (Walk) در $G$ را «پیمایش پرچم فرانسه» می‌نامیم اگر دنبالهٔ رنگ یال‌های آن به صورت قرمز، سفید، آبی، قرمز، سفید، آبی و به همین ترتیب باشد. به عبارت دقیق‌تر، پیمایش $v_0 \to v_1 \to \dots \to v_k$ یک پیمایش پرچم فرانسه است اگر برای هر عدد صحیح $i$، یال $v_i \to v_{i+1}$ در صورتی که $i \pmod 3 = 0$ قرمز، در صورتی که $i \pmod 3 = 1$ سفید، و در صورتی که $i \pmod 3 = 2$ آبی باشد.
 
@@ -1186,7 +1108,7 @@ $$
 </div>
 
 
-<details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - محمد جعفری پور</summary>
+<details class="success problem-solution problem-video-solution" markdown="1"><summary><span data-ui-string="solution">پاسخ</span> <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - محمد جعفری پور</summary>
 
 
 <div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-03-q36-solution-video.mp4"></video></div>
@@ -1201,7 +1123,7 @@ $$
 
 
 <div class="admonition example problem-statement" data-problem-slug="new-graph-traversal-02" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 یک گراف بدون جهت با $n$ رأس و $m$ یال به شما داده شده است. رئوس از $1$ تا $n$ شماره‌گذاری شده‌اند. گراف هیچ طوقه (self-loop) یا یال چندگانه‌ای ندارد.
 
@@ -1220,10 +1142,10 @@ $$
 </div>
 
 
-<div class="problem-tags problem-tags--topics"><span class="ptag ptag-topic" tabindex="0" role="button" aria-label="نمایش برچسب"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg><span class="ptag-topic__name">گراف</span></span></div>
+<div class="problem-tags problem-tags--topics"><span class="ptag ptag-topic" tabindex="0" role="button" data-ui-aria-label="show_tag" aria-label="نمایش برچسب"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg><span class="ptag-topic__name">گراف</span></span></div>
 
 
-<details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - مهدی آشیانی</summary>
+<details class="success problem-solution problem-video-solution" markdown="1"><summary><span data-ui-string="solution">پاسخ</span> <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - مهدی آشیانی</summary>
 
 
 <div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-03-q37-solution-video.mp4"></video>
@@ -1240,7 +1162,7 @@ $$
 
 
 <div class="admonition example problem-statement" data-problem-slug="graph-amshz-16" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 یک گراف جهت‌دار با $n$ رأس و $m$ یال داده شده است. روی هر یال یکی از ارقام $0$ تا $9$ نوشته شده است.
 
@@ -1252,7 +1174,7 @@ $$
 </div>
 
 
-<details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - سارا قضاوی</summary>
+<details class="success problem-solution problem-video-solution" markdown="1"><summary><span data-ui-string="solution">پاسخ</span> <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - سارا قضاوی</summary>
 
 
 <div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-03-q38-solution-video.mp4"></video>
@@ -1269,7 +1191,7 @@ $$
 
 
 <div class="admonition example problem-statement" data-problem-slug="graph-amshz-14" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 یک گراف بدون‌جهت همبند با $n$ رأس و $m$ یال داده شده است. رأس $i$ مقدار مثبت $a_i$ را دارد.
 
@@ -1283,7 +1205,7 @@ $$
 </div>
 
 
-<details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - علیرضا منصوری</summary>
+<details class="success problem-solution problem-video-solution" markdown="1"><summary><span data-ui-string="solution">پاسخ</span> <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - علیرضا منصوری</summary>
 
 
 <div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-03-q39-solution-video.mp4"></video>
@@ -1300,14 +1222,14 @@ $$
 
 
 <div class="admonition example problem-statement" data-problem-slug="archive-graph-sp-18" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 الگوریتمی با پیچیدگی زمانی مرتبه مکعب $n$ ارائه دهید و ماتریس $D$ با ابعاد $n \times n$
 را به عنوان ورودی می‌گیرد و در خروجی بیان می‌کند که آیا گراف وزن‌دار و جهت‌داری وجود دارد که در آن کوتاه‌ترین مسیر از راس $i$ به راس $j$ دقیقا برابر با $D_{ij}$ باشد؟
 </div>
 
 
-<details class="success problem-solution problem-video-solution" markdown="1"><summary>پاسخ <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - محمدپارسا شاه‌محمدی</summary>
+<details class="success problem-solution problem-video-solution" markdown="1"><summary><span data-ui-string="solution">پاسخ</span> <span class="problem-solution-summary-video" title="دارای ویدیو" aria-label="دارای ویدیو"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384 c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2 V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64 c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></span> - محمدپارسا شاه‌محمدی</summary>
 
 
 <div class="problem-solution-video"><video controls preload="none" src="https://github.com/da-sut-14042/site/releases/download/media-2026-08-23/assignment-03-q40-solution-video.mp4"></video></div>
@@ -1322,7 +1244,7 @@ $$
 
 
 <div class="admonition example problem-statement" data-problem-slug="idkwhattoputhere" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 خانم دکتر، خانم نسبتاً ولخرجی است و به خرید کردن علاقه بسیار زیادی دارد. او در کشوری با $n$ شهر زندگی می کند که شهرهایش با $m$ جاده دو طرفه به هم متصل هستند. هر جاده نیز طول صحیح و مثبتی دارد.
 
@@ -1332,7 +1254,7 @@ $$
 </div>
 
 
-<div class="problem-tags problem-tags--topics"><span class="ptag ptag-topic" tabindex="0" role="button" aria-label="نمایش برچسب"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg><span class="ptag-topic__name">کوتاه‌ترین مسیر</span></span><span class="ptag ptag-topic" tabindex="0" role="button" aria-label="نمایش برچسب"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg><span class="ptag-topic__name">گراف</span></span></div>
+<div class="problem-tags problem-tags--topics"><span class="ptag ptag-topic" tabindex="0" role="button" data-ui-aria-label="show_tag" aria-label="نمایش برچسب"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg><span class="ptag-topic__name">کوتاه‌ترین مسیر</span></span><span class="ptag ptag-topic" tabindex="0" role="button" data-ui-aria-label="show_tag" aria-label="نمایش برچسب"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg><span class="ptag-topic__name">گراف</span></span></div>
 
 
 ## سوال ۴۲ — اسکاتلند { #problem-graph-amshz-18 .problem .problem-optional }
@@ -1341,7 +1263,7 @@ $$
 
 
 <div class="admonition example problem-statement" data-problem-slug="graph-amshz-18" markdown="1">
-<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label">صورت سوال</span></div>
+<div class="admonition-title problem-statement__title" markdown="0"><span class="problem-statement__label" data-ui-string="problem_statement">صورت سوال</span></div>
 
 یک گراف بدون‌جهت همبند با $n$ شهر و $m$ جاده داریم. عبور از جاده‌ی بین دو شهر $u$ و $v$ به $w$ لیتر بنزین نیاز دارد.
 

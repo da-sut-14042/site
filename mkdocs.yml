@@ -41,6 +41,61 @@ markdown_extensions:
 
 plugins:
   - search
+  - i18n:
+      docs_structure: suffix
+      fallback_to_default: true
+      reconfigure_material: true
+      reconfigure_search: true
+      languages:
+        - locale: fa
+          default: true
+          name: فارسی
+          build: true
+        - locale: en
+          name: English
+          build: true
+          site_name: Design and Analysis of Algorithms Archive
+          nav_translations:
+            خانه: Home
+            تمرین‌ها: Assignments
+            تمرین ۱: Assignment 1
+            تمرین ۲: Assignment 2
+            تمرین ۳: Assignment 3
+            تمرین ۴: Assignment 4
+            تمرین ۵: Assignment 5
+            تمرین ۶: Assignment 6
+            جلسات: Lectures
+            منابع: Materials
+          theme:
+            language: en
+            palette:
+              - media: "(prefers-color-scheme: light)"
+                scheme: default
+                primary: indigo
+                accent: indigo
+                toggle: { icon: material/brightness-7, name: Switch to dark mode }
+              - media: "(prefers-color-scheme: dark)"
+                scheme: slate
+                primary: indigo
+                accent: indigo
+                toggle: { icon: material/brightness-4, name: Switch to light mode }
+          extra:
+            ui_strings:
+              filter_label: "Show:"
+              all_problems: All problems
+              deliverable_problems: Deliverable problems
+              problem_statement: Problem statement
+              solution: Solution
+              show_tag: Reveal tag
+
+extra:
+  ui_strings:
+    filter_label: "نمایش:"
+    all_problems: همه سوال‌ها
+    deliverable_problems: سوالات تحویلی
+    problem_statement: صورت سوال
+    solution: پاسخ
+    show_tag: نمایش برچسب
 
 extra_css:
   - assets/styles/fonts.css
@@ -51,17 +106,18 @@ extra_javascript:
   - assets/vendor/polyfill/polyfill.min.js
   - assets/vendor/mathjax/es5/tex-mml-chtml.js
   - assets/scripts/problem-tags.js
+  - assets/scripts/assignment-ui.js
   - assets/scripts/toc-math.js
 
 nav:
   - خانه: index.md
   - تمرین‌ها:
       - assignments/index.md
-      - تمرین ۱: assignments/tamrin-1.md
-      - تمرین ۲: assignments/tamrin-2.md
-      - تمرین ۳: assignments/tamrin-3.md
-      - تمرین ۴: assignments/tamrin-4.md
-      - تمرین ۵: assignments/tamrin-5.md
-      - تمرین ۶: assignments/tamrin-6.md
+      - تمرین ۱: assignments/assignment-1.md
+      - تمرین ۲: assignments/assignment-2.md
+      - تمرین ۳: assignments/assignment-3.md
+      - تمرین ۴: assignments/assignment-4.md
+      - تمرین ۵: assignments/assignment-5.md
+      - تمرین ۶: assignments/assignment-6.md
   - جلسات: lectures.md
   - منابع: materials.md

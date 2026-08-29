@@ -66,6 +66,7 @@ plugins:
             تمرین ۶: Assignment 6
             جلسات: Lectures
             منابع: Materials
+            سیاست‌ها: Policies
           theme:
             language: en
             palette:
@@ -121,3 +122,4 @@ nav:
       - تمرین ۶: assignments/assignment-6.md
   - جلسات: lectures.md
   - منابع: materials.md
+  - سیاست‌ها: policy.md

@@ -5,5 +5,6 @@
 - [تمرین‌ها](assignments/index.md)
 - [جلسات](lectures.md)
 - [منابع](materials.md)
+- [سیاست‌ها](policy.md)
 
 فایل‌های ویدئویی و اسلایدها در [انتشار رسانه‌ای همین مخزن در گیت‌هاب](https://github.com/da-sut-14042/site/releases/tag/media-2026-08-23) نگهداری می‌شوند.
